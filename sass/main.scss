@@ -1,19 +1,12 @@
-*,
-::before,
-::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+//import Base  Reset & Normalize
+@import "base/normalize";
+@import "base/reset";
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+//import colors, mixins and variables
+@import "abstracts/colors";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-a:visited {
-    color: inherit;
-}
 
 body {
  
@@ -70,4 +63,13 @@ transform: translate(-50%, -50%);
         background-color: grey;
         opacity: 0;
     }
+}
+
+
+//body
+
+p {
+    color: $primary_color;
+    font-size: 150%;
+    
 }
