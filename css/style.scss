@@ -1,23 +1,73 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-}
-a:visited {
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
-body{
-    height: 100%;
+a:visited {
+    color: inherit;
+}
+
+body {
+ 
+    width: 100%;
     font-family: "Raleway", sans-serif;
     font-size: calc(2vmin + 5px);
     overflow-x: hidden;
     margin: auto;
-  }
+}
+
+
+//   LOADER //
+
+.loader-container {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 100%;
+height: 100%;
+transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1000%;
+    z-index: 3;
+    animation: backgroundDisappear 3s 1 linear;
+    i {
+        animation: spin 3s 1 linear;
+        opacity: 0;
+    }
+}
+
+// LOADER  ----- ANIMATION -- SPINNING -- CIRCLE
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+        
+    }
+    100% {
+        transform: rotate(360deg);
+       
+    }
+}
+// Make the background disappear at the same timing as spinner
+@keyframes backgroundDisappear {
+    0% {
+        background-color: grey;
+        opacity: 1;
+    }
+    100% {
+        background-color: grey;
+        opacity: 0;
+    }
+}
