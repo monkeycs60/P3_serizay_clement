@@ -131,7 +131,7 @@ body {
     padding: 10px 15px;
     border-radius: 25px;
     color: white;
-    background: linear-gradient(1deg, $primary_color, $secondary_color 70%);  
+    background: linear-gradient(to bottom right, $primary_color, $secondary_color);  
     border: none;
     span {
         font-size: 1.1em;
