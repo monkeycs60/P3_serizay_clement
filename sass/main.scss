@@ -9,24 +9,22 @@
 
 
 body {
- 
+
     width: 100%;
     font-family: "Raleway", sans-serif;
     font-size: calc(2vmin + 5px);
     overflow-x: hidden;
     margin: auto;
+    background: white;
 }
 
 
 //   LOADER //
 
 .loader-container {
-position: absolute;
-top: 50%;
-left: 50%;
-width: 100%;
-height: 100%;
-transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,8 +33,9 @@ transform: translate(-50%, -50%);
     font-size: 1000%;
     z-index: 3;
     animation: backgroundDisappear 3s 1 linear;
+
     i {
-        animation: spin 3s 1 linear;
+        animation: spin 2s 1 linear;
         opacity: 0;
     }
 }
@@ -46,21 +45,23 @@ transform: translate(-50%, -50%);
     0% {
         transform: rotate(0deg);
         opacity: 1;
-        
     }
+
     100% {
         transform: rotate(360deg);
-       
+        opacity: 0;
     }
 }
+
 // Make the background disappear at the same timing as spinner
 @keyframes backgroundDisappear {
     0% {
-        background-color: grey;
         opacity: 1;
-    }
-    100% {
         background-color: grey;
+
+    }
+
+    100% {
         opacity: 0;
     }
 }
@@ -71,5 +72,4 @@ transform: translate(-50%, -50%);
 p {
     color: $primary_color;
     font-size: 150%;
-    
 }
