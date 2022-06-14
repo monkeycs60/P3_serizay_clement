@@ -23,8 +23,6 @@ body {
 
 .loader-container {
     position: absolute;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +65,7 @@ body {
 }
 
 
-//body
+//body  ---- BODY CONTENT -----
 
 p {
     color: $primary_color;
