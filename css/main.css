@@ -360,6 +360,10 @@ a:visited {
   color: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   width: 100%;
   font-size: calc(2vmin + 5px);
@@ -490,7 +494,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-  padding: 40px 20px;
+  padding: 40px 30px;
 }
 
 .discover-banner h2, .discover-banner h3, .discover-banner span {
@@ -498,11 +502,25 @@ body {
 }
 
 .discover-banner h2 {
-  font-size: 2em;
+  font-size: 1.8em;
+  font-weight: 900;
 }
 
 .discover-banner h3 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 300;
+}
+
+.discover-banner__button {
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(1deg, #9356DC, #FF79DA 70%);
+  border: none;
+}
+
+.discover-banner__button span {
+  font-size: 1.1em;
+  font-weight: 550;
 }
 /*# sourceMappingURL=main.css.map */
