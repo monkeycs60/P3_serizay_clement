@@ -362,7 +362,6 @@ a:visited {
 
 body {
   width: 100%;
-  font-family: "Raleway", sans-serif;
   font-size: calc(2vmin + 5px);
   overflow-x: hidden;
   margin: auto;
@@ -445,7 +444,65 @@ body {
   font-family: 'Shrikhand', cursive;
 }
 
-p {
-  color: #9356DC;
+.logo {
+  background: green;
+  padding: 20px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.city-location {
+  background: #c9c7c7;
+  padding: 20px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3vh;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.city-location i, .city-location p {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
+.discover-banner {
+  background: #f5f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.discover-banner h2, .discover-banner h3, .discover-banner span {
+  text-align: center;
+}
+
+.discover-banner h2 {
+  font-size: 2em;
+}
+
+.discover-banner h3 {
+  font-size: 1.1em;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
