@@ -364,6 +364,10 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   width: 100%;
   font-size: calc(2vmin + 5px);
@@ -585,7 +589,8 @@ body {
           justify-content: center;
   gap: 3vh;
   padding: 40px 25px;
-  background-color: #c9c7c7;
+  padding: 40px 25px 50px 25px;
+  background-color: #f5f1f1;
 }
 
 .restaurants__container {
@@ -606,6 +611,7 @@ body {
   background: white;
   border-radius: 25px 25px 0 0;
   position: relative;
+  overflow: visible;
 }
 
 .restaurants__container__restaurant img {
@@ -637,37 +643,105 @@ body {
   font-size: 1.1em;
 }
 
-.heart {
-  background-color: red;
-  border: 1px solid green;
-  display: inline-block;
-  height: 30px;
-  margin: 0 10px;
+.restaurants__container__restaurant__description button {
   position: relative;
-  top: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 30px;
+  height: 4.3vh;
+  width: 5vh;
+  font-size: 1.5em;
+  border: none;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
 }
 
-.heart:before,
-.heart:after {
-  content: "";
-  background-color: red;
-  border: 1px solid green;
-  border-radius: 50%;
-  height: 30px;
+.restaurants__container__restaurant__description button i {
   position: absolute;
-  width: 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.heart:before {
-  top: -15px;
-  left: 0;
+.restaurants__container__restaurant__description button :nth-child(2) {
+  color: #9356DC;
+  opacity: 0;
 }
 
-.heart:after {
-  left: 15px;
-  top: 0;
+.restaurants__container__restaurant__description button :nth-child(2):hover {
+  -webkit-animation: animOpacity 2s linear 1;
+          animation: animOpacity 2s linear 1;
+}
+
+@-webkit-keyframes animOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  font-size: 1.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 25px 50px 25px;
+  gap: 20px;
+  background: #464545;
+  color: white;
+}
+
+footer h4 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+}
+
+.footer-flex-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.container-i {
+  width: 5vw;
+  overflow: hidden;
+}
+
+.footer-ul-spacing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
 }
 /*# sourceMappingURL=main.css.map */
