@@ -678,7 +678,7 @@ footer h4 {
 
 .restaurants__container__restaurant {
   background: white;
-  border-radius: 25px 25px 0 0;
+  border-radius: 20px;
   position: relative;
   overflow: visible;
   -webkit-box-shadow: 0px 2px 5px 1px #d1cfcf;
@@ -690,7 +690,7 @@ footer h4 {
   height: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 25px 25px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .nouveau-card {
