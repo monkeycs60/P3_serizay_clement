@@ -48,6 +48,12 @@
     font-size: 1.1em;
 }
 
+.restaurants__container__restaurant__description__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .restaurants__container__restaurant__description button {
     position: relative;
     cursor: pointer;
