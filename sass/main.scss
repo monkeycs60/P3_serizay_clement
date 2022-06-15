@@ -55,6 +55,7 @@
     background: white;
     border-radius: 25px 25px 0 0;
     position: relative;
+
     img {
         width: 100%;
         height: 25vh;
@@ -64,14 +65,15 @@
 }
 
 .nouveau-card {
- position: absolute;
- top: 10%;
- left: 75%;
- background: $tertiary_color;
- color: #107a5f;
- font-weight: 800;
- padding: 5px;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    background: $tertiary_color;
+    color: #107a5f;
+    font-weight: 800;
+    padding: 5px 10px;
 }
+
 .restaurants__container__restaurant__description {
     display: flex;
     justify-content: space-between;
@@ -79,3 +81,57 @@
     font-size: 1.1em;
 }
 
+// .heart {
+//     position: absolute;
+//     top: 85%;
+//     left: 85%;
+//     font-size: 1.5em;
+//     border: none;
+//     background: none;
+
+//     i {
+//         color: transparent;
+// }
+// }
+// .heart-second {
+//     position: absolute;
+//     top: 85%;
+//     left: 85%;
+//     font-size: 1.5em;
+//     color: blue;
+//     z-index: 2;
+
+// }
+
+.heart {
+    background-color: red;
+    border: 1px solid green;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: red;
+    border: 1px solid green;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart:after {
+    left: 15px;
+    top: 0;
+  }

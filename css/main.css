@@ -623,7 +623,7 @@ body {
   background: #99E2D0;
   color: #107a5f;
   font-weight: 800;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .restaurants__container__restaurant__description {
@@ -635,5 +635,39 @@ body {
           justify-content: space-between;
   padding: 10px;
   font-size: 1.1em;
+}
+
+.heart {
+  background-color: red;
+  border: 1px solid green;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border: 1px solid green;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
 }
 /*# sourceMappingURL=main.css.map */
