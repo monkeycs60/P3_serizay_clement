@@ -1,0 +1,45 @@
+//   LOADER //
+
+.loader-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1000%;
+    z-index: 3;
+    animation: backgroundDisappear 3s 1 linear;
+
+    i {
+        animation: spin 2s 1 linear;
+        opacity: 0;
+    }
+}
+
+
+// LOADER  ----- ANIMATION -- SPINNING -- CIRCLE
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+// Make the background disappear at the same timing as spinner
+@keyframes backgroundDisappear {
+    0% {
+        opacity: 1;
+        background-color: grey;
+
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

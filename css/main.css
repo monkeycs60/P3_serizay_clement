@@ -373,6 +373,20 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.logo {
+  padding: 20px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.titles-font {
+  font-family: 'Shrikhand', cursive;
+}
+
 .loader-container {
   position: absolute;
   display: -webkit-box;
@@ -444,19 +458,18 @@ body {
   }
 }
 
-.titles-font {
-  font-family: 'Shrikhand', cursive;
+.discover-banner__button {
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  border: none;
 }
 
-.logo {
-  background: green;
-  padding: 20px 0 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.discover-banner__button span {
+  font-size: 1.1em;
+  font-weight: 550;
 }
 
 .city-location {
@@ -509,18 +522,5 @@ body {
 .discover-banner h3 {
   font-size: 1.2em;
   font-weight: 300;
-}
-
-.discover-banner__button {
-  padding: 10px 15px;
-  border-radius: 25px;
-  color: white;
-  background: linear-gradient(1deg, #9356DC, #FF79DA 70%);
-  border: none;
-}
-
-.discover-banner__button span {
-  font-size: 1.1em;
-  font-weight: 550;
 }
 /*# sourceMappingURL=main.css.map */

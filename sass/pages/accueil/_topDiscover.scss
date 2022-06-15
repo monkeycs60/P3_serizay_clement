@@ -1,0 +1,39 @@
+// CITY LOCATION ------
+.city-location {
+    background: $background_color_dark;
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    font-size: 1.1em;
+    font-weight: 600;
+    i, p {
+        transform: translateX(-10%);
+    }  
+}
+
+// DISCOVER BANNER ------
+.discover-banner {
+    background: $background_color_light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 30px;
+    h2, h3, span {
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.8em;
+        font-weight: 900;
+      
+      
+    }
+    h3 {
+        font-size: 1.2em;
+        font-weight: 300;
+        
+    }
+
+}

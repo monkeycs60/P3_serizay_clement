@@ -1,0 +1,12 @@
+.discover-banner__button {
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(to bottom right, $primary_color, $secondary_color);  
+    border: none;
+    span {
+        font-size: 1.1em;
+        font-weight: 550;
+        
+    }
+}

@@ -2,140 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
 
-//import Base  Reset & Normalize
+//import Base  Reset & Normalize & Body
 @import "base/normalize";
 @import "base/reset";
+@import "base/body";
 
 //import colors, mixins and variables
 @import "abstracts/colors";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+//import layout
+@import "layout/header";
+
+
+//import components
+@import "components/titles";
+@import "components/loader";
+@import "components/buttonExplore";
+
+
+//import accueil scss for all sections
+@import "pages/accueil/topDiscover";
+
 //font for titles : font-family: 'Shrikhand', cursive;
 
 
-body {
-
-    width: 100%;
-    font-size: calc(2vmin + 5px);
-    overflow-x: hidden;
-    margin: auto;
-    background: white;
-    font-family: 'Roboto', sans-serif;
-   
-}
 
 
-//   LOADER //
 
-.loader-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: 1000%;
-    z-index: 3;
-    animation: backgroundDisappear 3s 1 linear;
-
-    i {
-        animation: spin 2s 1 linear;
-        opacity: 0;
-    }
-}
-
-// LOADER  ----- ANIMATION -- SPINNING -- CIRCLE
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(360deg);
-        opacity: 0;
-    }
-}
-
-// Make the background disappear at the same timing as spinner
-@keyframes backgroundDisappear {
-    0% {
-        opacity: 1;
-        background-color: grey;
-
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
 
 
 //body  ---- BODY CONTENT -----
-.titles-font {
-    font-family: 'Shrikhand', cursive;
-}
 
 
 
-//HEADER ------
-.logo {
-    background: green;
-    padding: 20px 0 10px 0;
-    display: flex;
-    justify-content: center;
-}
 
-// CITY LOCATION ------
-.city-location {
-    background: $background_color_dark;
-    padding: 20px 0 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 3vh;
-    font-size: 1.1em;
-    font-weight: 600;
-    i, p {
-        transform: translateX(-10%);
-    }  
-}
 
-// DISCOVER BANNER ------
-.discover-banner {
-    background: $background_color_light;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 40px 30px;
-    h2, h3, span {
-        text-align: center;
-    }
-    h2 {
-        font-size: 1.8em;
-        font-weight: 900;
-      
-      
-    }
-    h3 {
-        font-size: 1.2em;
-        font-weight: 300;
-        
-    }
 
-}
 
-.discover-banner__button {
-    padding: 10px 15px;
-    border-radius: 25px;
-    color: white;
-    background: linear-gradient(to bottom right, $primary_color, $secondary_color);  
-    border: none;
-    span {
-        font-size: 1.1em;
-        font-weight: 550;
-        
-    }
-}
+
+
