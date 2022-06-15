@@ -54,14 +54,28 @@
 .restaurants__container__restaurant {
     background: white;
     border-radius: 25px 25px 0 0;
+    position: relative;
     img {
         width: 100%;
-        height: 20vh;
+        height: 25vh;
         object-fit: cover;
         border-radius: 25px 25px 0 0;
     }
 }
 
-
-
+.nouveau-card {
+ position: absolute;
+ top: 10%;
+ left: 75%;
+ background: $tertiary_color;
+ color: #107a5f;
+ font-weight: 800;
+ padding: 5px;
+}
+.restaurants__container__restaurant__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.1em;
+}
 

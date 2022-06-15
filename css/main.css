@@ -605,13 +605,35 @@ body {
 .restaurants__container__restaurant {
   background: white;
   border-radius: 25px 25px 0 0;
+  position: relative;
 }
 
 .restaurants__container__restaurant img {
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px 25px 0 0;
+}
+
+.nouveau-card {
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  background: #99E2D0;
+  color: #107a5f;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.restaurants__container__restaurant__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=main.css.map */
