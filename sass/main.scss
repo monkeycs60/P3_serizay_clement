@@ -24,32 +24,11 @@
 
 //import accueil scss for all sections
 @import "pages/accueil/topDiscover";
+@import "pages/accueil/fonctionnementProcedure";
 
 //font for titles : font-family: 'Shrikhand', cursive;
 
 
-.procedure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px;
-    gap: 4vh;
-    margin-top: 2vh;
-    h2 {
-        margin-bottom: 10px;
-    }
-}
-
-.procedure__step {
-    display: flex;
-    flex-direction: row;
-    gap: 7vw;
-    padding: 15px 0;
-    overflow: visible;
-    .procedure__step1__number {
-      transform: translateX(-80%);
-    }
-}
 
 
 

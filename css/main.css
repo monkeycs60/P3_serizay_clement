@@ -534,6 +534,7 @@ body {
   padding: 25px;
   gap: 4vh;
   margin-top: 2vh;
+  margin-bottom: 4vh;
 }
 
 .procedure h2 {
@@ -548,13 +549,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 7vw;
   padding: 15px 0;
   overflow: visible;
+  border-radius: 25px;
+  border: none;
+  -webkit-box-shadow: 0px 2px 5px 1px #c9c7c7;
+          box-shadow: 0px 2px 5px 1px #c9c7c7;
 }
 
 .procedure__step .procedure__step1__number {
-  -webkit-transform: translateX(-80%);
-          transform: translateX(-80%);
+  -webkit-transform: translateX(calc(-65% + 5px));
+          transform: translateX(calc(-65% + 5px));
+  border: 1px solid #9356DC;
+  border-radius: 100%;
+  padding: 3px 5px;
+  background: #9356DC;
+  color: white;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */

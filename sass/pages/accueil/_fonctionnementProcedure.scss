@@ -1,0 +1,35 @@
+// FONCTIONNEMENT PANNEL
+.procedure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    gap: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+.procedure__step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7vw;
+    padding: 15px 0;
+    overflow: visible;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 2px 5px 1px $background_color_dark;
+    
+    .procedure__step1__number {
+      transform: translateX(calc(-65% + 5px));
+      border: 1px solid $primary_color;
+      border-radius: 100%;
+      padding: 3px 5px;
+      background: $primary_color;
+      color: white;
+      font-size: 0.8em;
+    }
+}
