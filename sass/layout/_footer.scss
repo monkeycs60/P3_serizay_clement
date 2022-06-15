@@ -1,0 +1,31 @@
+footer {
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px 50px 25px;
+    gap: 20px;
+    background: rgb(70, 69, 69);
+    color: white;
+
+   h4 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+   }
+}
+
+.footer-flex-li {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.container-i {
+    width: 5vw;
+    overflow: hidden;
+}
+
+.footer-ul-spacing {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
