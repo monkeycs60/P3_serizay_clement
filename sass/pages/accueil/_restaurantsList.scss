@@ -50,7 +50,7 @@
 
 .restaurants__container__restaurant__description button {
     position: relative;
-  
+    cursor: pointer;
     height: 4.3vh;
     width: 5vh;
     font-size: 1.5em;
@@ -68,6 +68,10 @@
         
     }
     :nth-child(1) {
+        &:hover {
+            
+            color: transparent;
+        }
         
     }
     
@@ -78,9 +82,17 @@
         &:hover {
                 animation: animOpacity 2s linear 1;
             }
+           
     }
 }
-    @keyframes animOpacity {
+.fa-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+
+@keyframes animOpacity {
         0% {
     opacity: 0;
               }
@@ -89,3 +101,4 @@
              opacity: 1; 
         }
     }
+   

@@ -694,6 +694,7 @@ footer h4 {
 
 .restaurants__container__restaurant__description button {
   position: relative;
+  cursor: pointer;
   height: 4.3vh;
   width: 5vh;
   font-size: 1.5em;
@@ -719,6 +720,10 @@ footer h4 {
           transform: translate(-50%, -50%);
 }
 
+.restaurants__container__restaurant__description button :nth-child(1):hover {
+  color: transparent;
+}
+
 .restaurants__container__restaurant__description button :nth-child(2) {
   color: #9356DC;
   opacity: 0;
@@ -727,6 +732,12 @@ footer h4 {
 .restaurants__container__restaurant__description button :nth-child(2):hover {
   -webkit-animation: animOpacity 2s linear 1;
           animation: animOpacity 2s linear 1;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @-webkit-keyframes animOpacity {
