@@ -530,13 +530,17 @@ footer h4 {
 
 .city-location {
   background: #e0dfdf;
-  padding: 20px 0 10px 0;
+  color: #474747;
+  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 3vh;
   font-size: 1.1em;
   font-weight: 600;
@@ -573,6 +577,7 @@ footer h4 {
 .discover-banner h3 {
   font-size: 1.2em;
   font-weight: 300;
+  color: #747373;
 }
 
 .procedure {
@@ -626,6 +631,10 @@ footer h4 {
   background: #9356DC;
   color: white;
   font-size: 1em;
+}
+
+.procedure__step i {
+  color: #747373;
 }
 
 .restaurants {

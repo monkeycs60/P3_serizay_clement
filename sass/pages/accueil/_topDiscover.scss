@@ -1,9 +1,11 @@
 // CITY LOCATION ------
 .city-location {
     background: $background_color_city;
-    padding: 20px 0 10px 0;
+    color: rgb(71, 71, 71);
+    padding: 15px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 3vh;
     font-size: 1.1em;
     font-weight: 600;
@@ -27,5 +29,6 @@
     h3 {
         font-size: 1.2em;
         font-weight: 300;
+        color: $font_color_dark_grey;
     }
 }
