@@ -514,8 +514,8 @@ footer h4 {
 .discover-banner__button {
   padding: 15px 15px;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 2px 5px 1px #c9c7c7;
-          box-shadow: 0px 2px 5px 1px #c9c7c7;
+  -webkit-box-shadow: 0px 2px 5px 1px #e0dfdf;
+          box-shadow: 0px 2px 5px 1px #e0dfdf;
   color: white;
   background: -webkit-gradient(linear, left top, right bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(to bottom right, #9356DC, #FF79DA);
@@ -528,7 +528,7 @@ footer h4 {
 }
 
 .city-location {
-  background: #c9c7c7;
+  background: #e0dfdf;
   padding: 20px 0 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,8 +612,8 @@ footer h4 {
   border-radius: 20px;
   border: none;
   font-size: 1.1em;
-  -webkit-box-shadow: 0px 2px 5px 1px #c9c7c7;
-          box-shadow: 0px 2px 5px 1px #c9c7c7;
+  -webkit-box-shadow: 0px 2px 5px 1px #e0dfdf;
+          box-shadow: 0px 2px 5px 1px #e0dfdf;
 }
 
 .procedure__step .procedure__step1__number {
@@ -663,8 +663,8 @@ footer h4 {
   border-radius: 25px 25px 0 0;
   position: relative;
   overflow: visible;
-  -webkit-box-shadow: 0px 2px 5px 1px #c9c7c7;
-          box-shadow: 0px 2px 5px 1px #c9c7c7;
+  -webkit-box-shadow: 0px 2px 5px 1px #e0dfdf;
+          box-shadow: 0px 2px 5px 1px #e0dfdf;
 }
 
 .restaurants__container__restaurant img {
