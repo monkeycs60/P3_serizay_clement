@@ -64,48 +64,55 @@
     overflow: visible;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     background: white;
+
     i {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
 
-        
-    }
-    :nth-child(1) {
-        &:hover {
-            
-            color: transparent;
-        }
-        
-    }
-    
-    :nth-child(2) {
-        color: $primary_color;
-        opacity: 0;
-        
-        &:hover {
-                animation: animOpacity 2s linear 1;
-            }
-           
+
+&:hover {
+    .heart-first::after {
+        animation: fillHeart 1s linear 1;
     }
 }
-.fa-gradient {
-    background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+
+}
+
+.heart-first {
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+  
+
+}
+
+.heart-first::after {
+    font-family: FontAwesome;
+    content: "\f004";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    overflow: hidden;
+    background: -webkit-linear-gradient($primary_color, $secondary_color);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;   
 }
- 
 
-@keyframes animOpacity {
-        0% {
-    opacity: 0;
-              }
-             
-            100% {
-             opacity: 1; 
-        }
+@keyframes fillHeart {
+    0% {
+        height: 0;
     }
-   
+    100% {
+        height: 100%;
+    }
+}
+
+
+
+

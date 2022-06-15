@@ -753,41 +753,45 @@ footer h4 {
           transform: translate(-50%, -50%);
 }
 
-.restaurants__container__restaurant__description button :nth-child(1):hover {
-  color: transparent;
+.restaurants__container__restaurant__description button:hover .heart-first::after {
+  -webkit-animation: fillHeart 1s linear 1;
+          animation: fillHeart 1s linear 1;
 }
 
-.restaurants__container__restaurant__description button :nth-child(2) {
-  color: #9356DC;
-  opacity: 0;
+.heart-first {
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
 }
 
-.restaurants__container__restaurant__description button :nth-child(2):hover {
-  -webkit-animation: animOpacity 2s linear 1;
-          animation: animOpacity 2s linear 1;
-}
-
-.fa-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+.heart-first::after {
+  font-family: FontAwesome;
+  content: "\f004";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0%;
+  overflow: hidden;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-@-webkit-keyframes animOpacity {
+@-webkit-keyframes fillHeart {
   0% {
-    opacity: 0;
+    height: 0;
   }
   100% {
-    opacity: 1;
+    height: 100%;
   }
 }
 
-@keyframes animOpacity {
+@keyframes fillHeart {
   0% {
-    opacity: 0;
+    height: 0;
   }
   100% {
-    opacity: 1;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
