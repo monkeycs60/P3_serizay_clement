@@ -35,9 +35,32 @@
 //body  ---- BODY CONTENT -----
 
 
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+    padding: 40px 25px;
+    background-color: $background_color_dark;
+}
 
+.restaurants__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5vh;
+}
 
-
+.restaurants__container__restaurant {
+    background: white;
+    border-radius: 25px 25px 0 0;
+    img {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+        border-radius: 25px 25px 0 0;
+    }
+}
 
 
 
