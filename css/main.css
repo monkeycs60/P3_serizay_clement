@@ -605,23 +605,24 @@ footer h4 {
       -ms-flex-align: center;
           align-items: center;
   gap: 7vw;
-  padding: 15px 0;
+  padding: 20px 0;
   overflow: visible;
-  border-radius: 25px;
+  border-radius: 20px;
   border: none;
+  font-size: 1.1em;
   -webkit-box-shadow: 0px 2px 5px 1px #c9c7c7;
           box-shadow: 0px 2px 5px 1px #c9c7c7;
 }
 
 .procedure__step .procedure__step1__number {
-  -webkit-transform: translateX(calc(-65% + 5px));
-          transform: translateX(calc(-65% + 5px));
+  -webkit-transform: translateX(calc(-75% + 5px));
+          transform: translateX(calc(-75% + 5px));
   border: 1px solid #9356DC;
   border-radius: 100%;
-  padding: 3px 5px;
+  padding: 3px 6px;
   background: #9356DC;
   color: white;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .restaurants {
