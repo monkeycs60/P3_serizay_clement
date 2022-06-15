@@ -38,3 +38,11 @@
         color: $font_color_dark_grey;
     }
 }
+
+.procedure__step:hover {
+    
+    background: #9256dc27;
+    i {
+        color: $primary_color;
+    }
+}

@@ -637,6 +637,14 @@ footer h4 {
   color: #747373;
 }
 
+.procedure__step:hover {
+  background: #9256dc27;
+}
+
+.procedure__step:hover i {
+  color: #9356DC;
+}
+
 .restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
