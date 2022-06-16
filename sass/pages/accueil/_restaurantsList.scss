@@ -46,6 +46,8 @@
     justify-content: space-between;
     padding: 10px 20px 10px 10px;
     font-size: 1.1em;
+    
+
 }
 
 .restaurants__container__restaurant__description__text {
@@ -54,18 +56,19 @@
     gap: 5px;
 }
 
-.restaurants__container__restaurant__description button {
-    position: relative;
+.restaurants__container__restaurant button {
+    position: absolute;
+    top: 80%;
+    left: 85%;
     cursor: pointer;
     height: 4.3vh;
     width: 5vh;
     font-size: 1.5em;
     border: none;
     overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
+    background: none;
+    
+
 
     i {
         position: absolute;
