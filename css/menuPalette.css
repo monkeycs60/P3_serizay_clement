@@ -378,6 +378,7 @@ body {
 }
 
 .logo {
+  position: relative;
   padding: 20px 0 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,11 +386,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .logo img {
   width: 40%;
   height: auto;
+  margin: 0 auto;
+}
+
+.logo .logo__arrow {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 1.4em;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
