@@ -547,14 +547,14 @@ footer h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 3vh;
-  font-size: 1.1em;
-  font-weight: 600;
+  gap: 11vw;
+  font-size: 1em;
+  font-weight: 100;
 }
 
-.city-location i, .city-location p {
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
+.city-location h3 {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
 }
 
 .discover-banner {
