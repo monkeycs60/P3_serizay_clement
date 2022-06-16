@@ -387,6 +387,11 @@ body {
           justify-content: center;
 }
 
+.logo img {
+  width: 40%;
+  height: auto;
+}
+
 footer {
   font-size: 1.3em;
   display: -webkit-box;
