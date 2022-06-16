@@ -1,0 +1,24 @@
+//import fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap');
+
+
+//import Base  Reset & Normalize & Body
+@import "base/normalize";
+@import "base/reset";
+@import "base/body";
+
+//import colors, mixins and variables
+@import "abstracts/colors";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//import layout
+@import "layout/header";
+@import "layout/footer";
+
+
+//import components
+@import "components/titles";
+@import "components/loader";
+@import "components/buttonExplore";
+
