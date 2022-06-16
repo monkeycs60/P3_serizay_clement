@@ -710,7 +710,7 @@ footer h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   font-size: 1.1em;
 }
 
