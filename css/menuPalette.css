@@ -564,7 +564,7 @@ footer a {
 }
 
 .menu__contenu {
-  background: white;
+  background: #f5f1f1;
   padding: 20px 15px 40px 15px;
   border-radius: 25px 25px 0px 0px;
   -webkit-transform: translateY(-7%);
@@ -575,7 +575,6 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: green;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -597,6 +596,8 @@ footer a {
   border: none;
   overflow: visible;
   background: none;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
 }
 
 .menu__contenu__title button:hover .heart-first::after {
@@ -637,5 +638,50 @@ footer a {
   100% {
     height: 100%;
   }
+}
+
+.menu__contenu__dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.title-after {
+  font-size: 1.4em;
+  color: #474747;
+  font-weight: 100;
+  position: relative;
+}
+
+.title-after::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  height: 3px;
+  width: 12%;
+  background: #99E2D0;
+}
+
+.menu__contenu__dish__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: red;
+  overflow: hidden;
+}
+
+.menu__contenu__dish__items {
+  width: 100%;
+}
+
+.menu__contenu__dish__box {
+  width: 0%;
+  background: #99E2D0;
 }
 /*# sourceMappingURL=menuPalette.css.map */
