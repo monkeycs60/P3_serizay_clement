@@ -131,15 +131,21 @@ main {
     display: flex;
     background: red;
     overflow: hidden;
-   
+    
 }
 
 .menu__contenu__dish__items {
     width: 100%;
+    padding: 15px 10px;
   
 }
 
 .menu__contenu__dish__box {
     width: 0%;
     background: $tertiary_color;
+}
+
+.menu__contenu__dish__items__description {
+    display: flex;
+    justify-content: space-between;
 }

@@ -678,10 +678,20 @@ footer a {
 
 .menu__contenu__dish__items {
   width: 100%;
+  padding: 15px 10px;
 }
 
 .menu__contenu__dish__box {
   width: 0%;
   background: #99E2D0;
+}
+
+.menu__contenu__dish__items__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=menuPalette.css.map */
