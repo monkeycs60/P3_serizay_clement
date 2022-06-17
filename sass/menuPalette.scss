@@ -24,3 +24,75 @@
 
 
 
+main {
+
+   
+}
+
+.menu__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu__contenu {
+    background: white;
+    padding: 20px 15px 40px 15px;
+    border-radius: 25px 25px 0px 0px;
+    transform: translateY(-7%);
+}
+
+.menu__contenu__title {
+    display: flex;
+    background: green;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.7em;
+    }
+    button {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5em;
+    border: none;
+    overflow: visible;
+    background: none;
+
+&:hover {
+    .heart-first::after {
+        animation: fillHeart 1s linear 1;
+    }
+}
+
+    }
+}
+
+.heart-first {
+ 
+    font-size: 1em;
+  
+}
+
+.heart-first::after {
+    font-family: FontAwesome;
+    content: "\f004";
+    position: absolute;
+    left: 30%;
+    height: 0%;
+    overflow: hidden;
+    background: -webkit-linear-gradient($primary_color, $secondary_color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    background-clip: text;
+}
+
+@keyframes fillHeart {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
