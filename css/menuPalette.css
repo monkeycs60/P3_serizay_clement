@@ -559,7 +559,7 @@ footer a {
 }
 
 main {
-  background: blue;
+  background: #f5f1f1;
 }
 
 .menu__photo img {
@@ -814,5 +814,9 @@ main {
 .discover-banner__button {
   width: 55%;
   margin: 0 auto;
+}
+
+footer {
+  margin-top: -6vh;
 }
 /*# sourceMappingURL=menuPalette.css.map */

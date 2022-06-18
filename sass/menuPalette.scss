@@ -25,7 +25,7 @@
 
 
 main {
-    background: blue;
+    background: #f5f1f1;
     // height: 177vh;
     // height: 1185px;
 
@@ -45,6 +45,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 
 }
 
@@ -242,4 +243,7 @@ white-space: nowrap;
 .discover-banner__button {
     width: 55%;
     margin: 0 auto;
+}
+footer {
+    margin-top: -6vh;
 }
