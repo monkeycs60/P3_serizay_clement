@@ -148,10 +148,10 @@ main {
 
     &:hover {
        .menu__contenu__dish__box {
-        animation: checkSlide 2s ease-in-out 1;
+        animation: checkSlide 1s ease-in-out 1;
        } 
        i {
-        animation: rotateIcon 2s ease-in-out 1;
+        animation: rotateIcon 1s ease-in-out 1;
 
        }
     }
@@ -177,7 +177,7 @@ main {
     
  
     100% {
-        transform: rotate(720deg);
+        transform: rotate(360deg);
         margin-left: none;
        
         
@@ -208,14 +208,28 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 100%;
+    width: calc(100%);
     padding: 10px 10px;
+ 
+
+    h3 {
+        font-size: 1.3em;
+    }
 }
 
 .menu__contenu__dish__items__description {
     display: flex;
     justify-content: space-between;
-    font-size: 0.95em;
+    font-size: 1.1em;
+      
+}
+
+.spanclassed {
+    width: 80vw;
+display: block;
+overflow: hidden; 
+text-overflow: ellipsis; 
+white-space: nowrap;
 }
 
 .menu__contenu__dish__items__description__price {
