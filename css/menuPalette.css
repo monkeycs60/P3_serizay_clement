@@ -510,6 +510,17 @@ footer a {
   text-shadow: 0px 0px 10px grey;
 }
 
+body {
+  position: relative;
+}
+
+.container-menu {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 main {
   background: #f5f1f1;
 }
@@ -525,7 +536,6 @@ main {
   background: #f5f1f1;
   padding: 20px 15px 40px 15px;
   border-radius: 25px 25px 0px 0px;
-  transform: translateY(-5%);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -715,8 +725,4 @@ main {
 .discover-banner__button {
   width: 55%;
   margin: 0 auto;
-}
-
-footer {
-  margin-top: -6vh;
 }/*# sourceMappingURL=menuPalette.css.map */
