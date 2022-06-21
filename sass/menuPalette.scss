@@ -116,7 +116,7 @@ main {
 .menu__contenu__dish {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     margin-bottom: 3vh;
 
 
@@ -146,14 +146,13 @@ main {
 
 
 .menu__contenu__items {
-    background: red;
     height: 100%;
     display: flex;
     // background: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 2px 5px 1px $background_color_dark;
-    padding: 10px;
+    // padding: 10px;
 
     &:hover {
         .items__checkbox {
@@ -174,7 +173,7 @@ main {
     }
 
     100% {
-        width: 30%;
+        width: 25%;
 
     }
 }
@@ -204,7 +203,8 @@ main {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: green;
+    padding: 15px 10px;
+   
 
     h3 {
         font-size: 150%;
@@ -225,10 +225,10 @@ main {
 }
 
 .items__price {
-    background: yellow;
     display: flex;
     align-items: flex-end;
-    padding: 0px 10px;
+    // 
+    padding: 15px 20px;
 
 }
 
@@ -243,6 +243,7 @@ main {
     transition: all 1s ease-in-out;
     border-radius: 0 10px 10px 0;
     z-index: 1;
+    padding: 0;
 
     i {
         font-size: 1.5em;
