@@ -593,7 +593,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 4vh;
+  margin-bottom: 3vh;
 }
 
 .title-after {
@@ -612,99 +612,28 @@ main {
   background: #99E2D0;
 }
 
-.menu__contenu__dish__container {
+.menu__contenu__items {
+  background: red;
+  height: 100%;
   display: flex;
-  background: white;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 2px 5px 1px #d1cfcf;
-}
-.menu__contenu__dish__container:hover .menu__contenu__dish__box {
-  -webkit-animation: checkSlide 1s ease-in-out 1;
-          animation: checkSlide 1s ease-in-out 1;
-}
-.menu__contenu__dish__container:hover i {
-  -webkit-animation: rotateIcon 1s ease-in-out 1;
-          animation: rotateIcon 1s ease-in-out 1;
+  padding: 10px;
 }
 
-@-webkit-keyframes checkSlide {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 30%;
-  }
-}
-
-@keyframes checkSlide {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 30%;
-  }
-}
-@-webkit-keyframes rotateIcon {
-  0% {
-    margin-left: 5vh;
-  }
-  100% {
-    transform: rotate(360deg);
-    margin-left: none;
-  }
-}
-@keyframes rotateIcon {
-  0% {
-    margin-left: 5vh;
-  }
-  100% {
-    transform: rotate(360deg);
-    margin-left: none;
-  }
-}
-.menu__contenu__dish__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0%;
-  background: #99E2D0;
-  overflow: hidden;
-  transition: all 1s ease-in-out;
-  position: relative;
-  z-index: 1;
-}
-.menu__contenu__dish__box i {
-  font-size: 1.5em;
-  color: white;
-  transition: all 1s ease-in-out;
-}
-
-.menu__contenu__dish__items {
+.items__titles {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 5px;
-  width: 100%;
-  padding: 10px 10px;
+  background: green;
 }
-.menu__contenu__dish__items h3 {
-  font-size: 1.3em;
+.items__titles h3 {
+  font-size: 150%;
 }
-
-.menu__contenu__dish__items__description {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.1em;
-}
-
-.menu__contenu__dish__items__description__sub {
-  font-size: 1em;
-  font-weight: 100;
-}
-
-.menu__contenu__dish__items__description__price {
-  font-weight: 700;
-  transform: translateX(-50%);
+.items__titles p {
+  font-size: 110%;
 }
 
 .discover-banner__button {
