@@ -121,6 +121,7 @@ main {
 
 
 
+
 }
 
 .title-after {
@@ -154,19 +155,100 @@ main {
     box-shadow: 0px 2px 5px 1px $background_color_dark;
     padding: 10px;
 
+    &:hover {
+        .items__checkbox {
+            animation: checkSlide 1s ease-in-out 1;
+        }
+
+        .items__checkbox i {
+            animation: rotateIcon 1s ease-in-out 1;
+
+        }
+    }
 }
+
+@keyframes checkSlide {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 30%;
+
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        margin-left: 5vh;
+
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+        margin-left: none;
+
+
+    }
+}
+
 
 .items__titles {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    // flex: 1;
     gap: 5px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     background: green;
+
     h3 {
         font-size: 150%;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
+
     p {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 110%;
+    }
+}
+
+.items__price {
+    background: yellow;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 10px;
+
+}
+
+.items__checkbox {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    background: $tertiary_color;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    border-radius: 0 10px 10px 0;
+    z-index: 1;
+
+    i {
+        font-size: 1.5em;
+        color: white;
+        transition: all 1s ease-in-out;
+        // transform: rotate(120deg);
     }
 }
 
@@ -178,43 +260,11 @@ main {
 //     overflow: hidden;
 //     box-shadow: 0px 2px 5px 1px $background_color_dark;
 
-//     &:hover {
-//        .menu__contenu__dish__box {
-//         animation: checkSlide 1s ease-in-out 1;
-//        } 
-//        i {
-//         animation: rotateIcon 1s ease-in-out 1;
 
-//        }
 //     }
 
 // }
 
-// @keyframes checkSlide {
-//     0% {
-//         width: 0;
-
-//     }
-
-//     100% {
-//         width: 30%;
-
-//     }
-// }
-// @keyframes rotateIcon {
-//     0% {
-//        margin-left: 5vh;
-
-//     }
-
-
-//     100% {
-//         transform: rotate(360deg);
-//         margin-left: none;
-
-
-//     }
-// }
 
 
 // .menu__contenu__dish__box {

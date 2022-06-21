@@ -621,19 +621,97 @@ main {
   box-shadow: 0px 2px 5px 1px #d1cfcf;
   padding: 10px;
 }
+.menu__contenu__items:hover .items__checkbox {
+  -webkit-animation: checkSlide 1s ease-in-out 1;
+          animation: checkSlide 1s ease-in-out 1;
+}
+.menu__contenu__items:hover .items__checkbox i {
+  -webkit-animation: rotateIcon 1s ease-in-out 1;
+          animation: rotateIcon 1s ease-in-out 1;
+}
 
+@-webkit-keyframes checkSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes checkSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@-webkit-keyframes rotateIcon {
+  0% {
+    margin-left: 5vh;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-left: none;
+  }
+}
+@keyframes rotateIcon {
+  0% {
+    margin-left: 5vh;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-left: none;
+  }
+}
 .items__titles {
   display: flex;
   flex-direction: column;
-  flex: 1;
   gap: 5px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background: green;
 }
 .items__titles h3 {
   font-size: 150%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .items__titles p {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 110%;
+}
+
+.items__price {
+  background: yellow;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 10px;
+}
+
+.items__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
+  background: #99E2D0;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  border-radius: 0 10px 10px 0;
+  z-index: 1;
+}
+.items__checkbox i {
+  font-size: 1.5em;
+  color: white;
+  transition: all 1s ease-in-out;
 }
 
 .discover-banner__button {
