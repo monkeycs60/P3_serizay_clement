@@ -29,21 +29,12 @@
 
 // Template for the 4 Menu pages
 
-body {
-    position: relative;
-}
-.container-menu {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-main {
-    background: #f5f1f1;
-    // height: 177vh;
-    // height: 1185px;
 
+
+main {
+    background: #f5f1f1; 
 }
+
 
 .menu__photo img {
     width: 100%;
@@ -52,14 +43,11 @@ main {
 }
 
 .menu__contenu {
-    // position: absolute;
-    // top: 79%;
-    // left: 0%;
-    // width: 100%;
+    width: 100%;
     background: #f5f1f1;
-    padding: 20px 15px 40px 15px;
+    padding: 20px 15px 5% 15px;
     border-radius: 25px 25px 0px 0px;
-    // transform: translateY(-5%);
+    transform: translateY(-5%);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -130,7 +118,7 @@ main {
 .menu__contenu__dish {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 3vh;
 
 
@@ -267,78 +255,13 @@ main {
 }
 
 
-// .menu__contenu__dish__container {
-//     display: flex;
-//     background: white;
-//     border-radius: 15px;
-//     overflow: hidden;
-//     box-shadow: 0px 2px 5px 1px $background_color_dark;
-
-
-//     }
-
-// }
-
-
-
-// .menu__contenu__dish__box {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 0%;
-//     background: $tertiary_color;
-//     overflow: hidden;
-//     transition: all 1s ease-in-out;
-//     position: relative;
-//     z-index: 1;
-//     i {
-//         font-size: 1.5em;
-//         color: white;
-//         transition: all 1s ease-in-out;
-//         // transform: rotate(120deg);
-//     }
-// }
-
-
-// .menu__contenu__dish__items {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 5px;
-//     width: calc(100%);
-//     padding: 10px 10px;
-
-
-//     h3 {
-//         font-size: 1.3em;
-//     }
-// }
-
-// .menu__contenu__dish__items__description {
-//     display: flex;
-//     justify-content: space-between;
-//     font-size: 1.1em;
-// }
-
-
-// .menu__contenu__dish__items__description__sub {
-//     font-size: 1em;
-//     font-weight: 100;
-
-
-// }
-
-// .menu__contenu__dish__items__description__price {
-//     font-weight: 700;
-//     transform: translateX(-50%);
-// }
-
 
 
 //bouton
 
 .discover-banner__button {
     width: 55%;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 
@@ -346,6 +269,6 @@ main {
 
 
 footer {
-    // margin-top: -6vh;
+    margin-top: -5vh;
     
 }
