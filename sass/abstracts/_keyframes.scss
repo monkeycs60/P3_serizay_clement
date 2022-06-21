@@ -1,0 +1,40 @@
+//Keyframes animation
+
+
+@keyframes fillHeart {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+
+@keyframes checkSlide {
+    0% {
+        width: 0;
+
+    }
+
+    100% {
+        width: 19%;
+
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        margin-left: 5vh;
+
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+        margin-left: none;
+
+
+    }
+}

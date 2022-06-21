@@ -374,6 +374,57 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@-webkit-keyframes fillHeart {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes fillHeart {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-webkit-keyframes checkSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 19%;
+  }
+}
+@keyframes checkSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 19%;
+  }
+}
+@-webkit-keyframes rotateIcon {
+  0% {
+    margin-left: 5vh;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-left: none;
+  }
+}
+@keyframes rotateIcon {
+  0% {
+    margin-left: 5vh;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-left: none;
+  }
+}
 .logo {
   position: relative;
   padding: 20px 0 10px 0;
@@ -573,23 +624,6 @@ main {
   background-clip: text;
 }
 
-@-webkit-keyframes fillHeart {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-@keyframes fillHeart {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
 .menu__contenu__dish {
   display: flex;
   flex-direction: column;
@@ -616,6 +650,7 @@ main {
 .menu__contenu__items {
   height: 100%;
   display: flex;
+  background: white;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 2px 5px 1px #d1cfcf;
@@ -629,41 +664,6 @@ main {
           animation: rotateIcon 1s ease-in-out 1;
 }
 
-@-webkit-keyframes checkSlide {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 19%;
-  }
-}
-
-@keyframes checkSlide {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 19%;
-  }
-}
-@-webkit-keyframes rotateIcon {
-  0% {
-    margin-left: 5vh;
-  }
-  100% {
-    transform: rotate(360deg);
-    margin-left: none;
-  }
-}
-@keyframes rotateIcon {
-  0% {
-    margin-left: 5vh;
-  }
-  100% {
-    transform: rotate(360deg);
-    margin-left: none;
-  }
-}
 .items__titles {
   display: flex;
   flex-direction: column;
@@ -675,7 +675,7 @@ main {
   padding: 15px 10px;
 }
 .items__titles h3 {
-  font-size: 150%;
+  font-size: 140%;
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -692,6 +692,7 @@ main {
 .items__price {
   display: flex;
   align-items: flex-end;
+  font-weight: 800;
   padding: 15px 20px;
 }
 
