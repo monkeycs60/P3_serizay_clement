@@ -560,6 +560,10 @@ footer a {
   font-weight: 500;
   text-shadow: 0px 0px 10px grey;
 }
+.discover-banner__button:hover {
+  box-shadow: 0px 2px 8px 4px #d1cfcf;
+  background: linear-gradient(to bottom right, rgba(146, 86, 220, 0.7450980392), rgba(255, 121, 217, 0.6901960784));
+}
 
 .img-background-enchantee {
   background-image: url("../../../images/restaurants/note-enchantee.jpg");
@@ -604,12 +608,12 @@ main {
 .menu__contenu {
   width: 100%;
   background: #f5f1f1;
-  padding: 20px 15px 3vh 15px;
-  border-radius: 25px 25px 0px 0px;
+  padding: 25px 15px 3vh 15px;
+  border-radius: 55px 55px 0px 0px;
   transform: translateY(-5%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .menu__contenu__title {
@@ -632,8 +636,7 @@ main {
   transform: translateX(-25%);
 }
 .menu__contenu__title button:hover .heart-first::after {
-  -webkit-animation: fillHeart 1s linear 1;
-          animation: fillHeart 1s linear 1;
+  height: 100%;
 }
 
 .heart-first {
@@ -651,6 +654,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: all 2s ease-in-out;
 }
 
 .menu__contenu__dish {
@@ -684,13 +688,15 @@ main {
   overflow: hidden;
   box-shadow: 0px 2px 5px 1px #d1cfcf;
 }
+.menu__contenu__items .items__checkbox i {
+  margin-left: 5vh;
+}
 .menu__contenu__items:hover .items__checkbox {
-  -webkit-animation: checkSlide 1s ease-in-out 1;
-          animation: checkSlide 1s ease-in-out 1;
+  width: 19%;
 }
 .menu__contenu__items:hover .items__checkbox i {
-  -webkit-animation: rotateIcon 1s ease-in-out 1;
-          animation: rotateIcon 1s ease-in-out 1;
+  transform: rotate(720deg);
+  margin-left: 0;
 }
 
 .items__titles {

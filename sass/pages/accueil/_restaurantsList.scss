@@ -21,15 +21,17 @@
     position: relative;
     overflow: visible;
     box-shadow: 0px 2px 5px 1px $background_color_dark;
+    
 
-
-    img {
-        width: 100%;
-        height: 25vh;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
+    // img {
+    //     width: 100%;
+    //     height: 25vh;
+    //     object-fit: cover;
+    //     border-radius: 20px 20px 0 0;
+    // }
 }
+
+
 
 .nouveau-card {
     position: absolute;
@@ -80,7 +82,8 @@
 
 &:hover {
     .heart-first::after {
-        animation: fillHeart 1s linear 1;
+        // animation: fillHeart 1s linear 1;
+        height: 100%;
     }
 }
 
@@ -104,10 +107,50 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
     background-clip: text;
+    transition: all 2s ease-in-out;
 }
 
 
 
 
+//restaurant background images
 
+.restaurant__bg--palette {
+    background: url("../../../images/restaurants/palette-gout.jpg");
+    background-position: top 90% left 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px 20px 0 0;
+}
 
+.restaurant__bg--enchantee {
+    background: url("../../../images/restaurants/note-enchantee.jpg");
+    background-position: top 60% left 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px 20px 0 0;
+}
+
+.restaurant__bg--francaise {
+    background: url("../../../images/restaurants/la-francaise.jpg");
+    background-position: top 100% left 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px 20px 0 0;
+}
+
+.restaurant__bg--delice {
+    background: url("../../../images/restaurants/delice-sens.jpg");
+    background-position: top 100% left 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px 20px 0 0;
+}
