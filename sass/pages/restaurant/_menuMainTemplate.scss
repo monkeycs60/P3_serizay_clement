@@ -7,12 +7,6 @@ main {
 }
 
 
-.menu__photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .menu__contenu {
     width: 100%;
     background: #f5f1f1;
@@ -83,9 +77,6 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 3vh;
-
-
-
 
 }
 
@@ -163,6 +154,7 @@ main {
 }
 
 .items__price {
+    font-size: 120%;
     display: flex;
     align-items: flex-end;
     font-weight: 800;
@@ -181,6 +173,7 @@ main {
     border-radius: 0 10px 10px 0;
     z-index: 1;
     padding: 0;
+    font-size: 130%;
 
     i {
         font-size: 1.5em;

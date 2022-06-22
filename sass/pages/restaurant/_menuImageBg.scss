@@ -1,0 +1,23 @@
+// ---------------------------------------------
+.img-background-enchantee {
+
+    background-image: url("../../../images/restaurants/note-enchantee.jpg");
+    @include bg-img-menu;
+ 
+}
+
+.img-background-francaise {
+    background-image: url("../../../images/restaurants/la-francaise.jpg");
+    @include bg-img-menu;
+}
+
+.img-background-palette {
+    background-image: url("../../../images/restaurants/palette-gout.jpg");
+    @include bg-img-menu;
+}
+
+.img-background-delice {
+    background-image: url("../../../images/restaurants/delice-sens.jpg");
+    @include bg-img-menu;
+}
+// ---------------------------------------------
