@@ -12,7 +12,12 @@
     h3 {
         transform: translateX(-25%);
     }
-}
+    @media all and (min-width: 768px) {
+       font-size: 1.2em;
+    }
+        
+    }
+
 
 // DISCOVER BANNER ------
 .discover-banner {
@@ -31,4 +36,15 @@
         font-weight: 300;
         color: $font_color_dark_grey;
     }
+    @media all and (min-width: 768px) {
+        gap: 30px;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 2em;
+            font-weight: 900;  
+        }
+        h3 {
+            font-size: 1.2em;
+        }
+     }
 }

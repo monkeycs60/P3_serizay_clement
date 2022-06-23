@@ -17,4 +17,8 @@
         background: linear-gradient(to bottom right, #9256dcd5, #ff79d9ce);
         transform: scale(1.02);
     }
+    @media all and (min-width: 768px) {
+        padding: 35px 30px;
+        font-size: 1.2em;
+     }
 }

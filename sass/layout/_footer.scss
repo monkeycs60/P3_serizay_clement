@@ -7,6 +7,11 @@ footer {
     background: rgb(70, 69, 69);
     color: white;
     font-weight: 100;
+@media all and (min-width: 768px) {
+    align-items: center;
+}
+
+    
 
    h4 {
     font-family: 'Shrikhand', cursive;
@@ -16,8 +21,14 @@ footer {
    }
    a {
     margin-top: 5px;
-   }
+    @media screen and (min-width: 768px) {
+       
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 .footer-flex-li {
     display: flex;
@@ -31,7 +42,29 @@ footer {
 }
 
 .footer-ul-spacing {
-display: flex;
-flex-direction: column;
-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @media all and (min-width: 768px) {
+        gap: 10px;
+    }
+        
+    
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+ul {
+
+    width: 100%;
+   
+    
+}
+li {
+    display: flex;
+    justify-content: center;
+}
+}
 }

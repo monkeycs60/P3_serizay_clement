@@ -434,6 +434,14 @@ body {
   width: 40%;
   height: auto;
 }
+@media all and (min-width: 768px) {
+  .logo {
+    padding-bottom: 25px;
+  }
+  .logo img {
+    width: 60%;
+  }
+}
 
 footer {
   font-size: 1.3em;
@@ -445,6 +453,11 @@ footer {
   color: white;
   font-weight: 100;
 }
+@media all and (min-width: 768px) {
+  footer {
+    align-items: center;
+  }
+}
 footer h4 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -454,22 +467,40 @@ footer h4 {
 footer a {
   margin-top: 5px;
 }
-
-.footer-flex-li {
+@media screen and (min-width: 768px) {
+  footer a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+footer .footer-flex-li {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-
-.container-i {
+footer .container-i {
   width: 5vw;
   overflow: hidden;
 }
-
-.footer-ul-spacing {
+footer .footer-ul-spacing {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+@media all and (min-width: 768px) {
+  footer .footer-ul-spacing {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    width: 100%;
+  }
+  footer li {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .titles-font {
@@ -573,6 +604,12 @@ footer a {
   background: linear-gradient(to bottom right, rgba(146, 86, 220, 0.8352941176), rgba(255, 121, 217, 0.8078431373));
   transform: scale(1.02);
 }
+@media all and (min-width: 768px) {
+  .discover-banner__button {
+    padding: 35px 30px;
+    font-size: 1.2em;
+  }
+}
 
 .city-location {
   background: #e0dfdf;
@@ -587,6 +624,11 @@ footer a {
 }
 .city-location h3 {
   transform: translateX(-25%);
+}
+@media all and (min-width: 768px) {
+  .city-location {
+    font-size: 1.2em;
+  }
 }
 
 .discover-banner {
@@ -606,6 +648,19 @@ footer a {
   font-weight: 300;
   color: #747373;
 }
+@media all and (min-width: 768px) {
+  .discover-banner {
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+  .discover-banner h2 {
+    font-size: 2em;
+    font-weight: 900;
+  }
+  .discover-banner h3 {
+    font-size: 1.2em;
+  }
+}
 
 .procedure {
   display: flex;
@@ -615,6 +670,13 @@ footer a {
   gap: 4vh;
   margin-top: 2vh;
   margin-bottom: 4vh;
+}
+@media all and (min-width: 768px) {
+  .procedure {
+    font-size: 1.3em;
+    align-items: center;
+    padding-top: 0px;
+  }
 }
 
 .procedure__step {
@@ -629,6 +691,12 @@ footer a {
   font-size: 1.1em;
   box-shadow: 0px 2px 5px 1px #d1cfcf;
 }
+@media all and (min-width: 768px) {
+  .procedure__step {
+    padding: 40px;
+    width: 90%;
+  }
+}
 .procedure__step .procedure__step1__text {
   font-size: 1.1em;
   font-weight: 800;
@@ -641,6 +709,12 @@ footer a {
   background: #9356DC;
   color: white;
   font-size: 1em;
+}
+@media all and (min-width: 768px) {
+  .procedure__step .procedure__step1__number {
+    padding: 6px 12px;
+    transform: translateX(-62px);
+  }
 }
 .procedure__step i {
   color: #747373;
@@ -660,9 +734,19 @@ footer a {
   flex-direction: column;
   justify-content: center;
   gap: 3vh;
-  padding: 40px 25px;
   padding: 40px 25px 50px 25px;
   background-color: #f5f1f1;
+}
+@media all and (min-width: 768px) {
+  .restaurants {
+    width: 100%;
+    margin: auto;
+    gap: 6vh;
+    margin-bottom: 50px;
+  }
+  .restaurants h2 {
+    margin: auto;
+  }
 }
 
 .restaurants__container {
@@ -671,6 +755,13 @@ footer a {
   justify-content: center;
   gap: 3.5vh;
 }
+@media all and (min-width: 768px) {
+  .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .restaurants__container__restaurant {
   background: white;
@@ -678,6 +769,11 @@ footer a {
   position: relative;
   overflow: visible;
   box-shadow: 0px 2px 5px 1px #d1cfcf;
+}
+@media all and (min-width: 768px) {
+  .restaurants__container__restaurant {
+    width: 45%;
+  }
 }
 
 .nouveau-card {
@@ -688,6 +784,11 @@ footer a {
   color: #107a5f;
   font-weight: 800;
   padding: 5px 10px;
+}
+@media all and (min-width: 768px) {
+  .nouveau-card {
+    left: 65%;
+  }
 }
 
 .restaurants__container__restaurant__description {

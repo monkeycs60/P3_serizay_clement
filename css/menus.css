@@ -457,6 +457,11 @@ footer {
   color: white;
   font-weight: 100;
 }
+@media all and (min-width: 768px) {
+  footer {
+    align-items: center;
+  }
+}
 footer h4 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -466,22 +471,40 @@ footer h4 {
 footer a {
   margin-top: 5px;
 }
-
-.footer-flex-li {
+@media screen and (min-width: 768px) {
+  footer a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+footer .footer-flex-li {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-
-.container-i {
+footer .container-i {
   width: 5vw;
   overflow: hidden;
 }
-
-.footer-ul-spacing {
+footer .footer-ul-spacing {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+@media all and (min-width: 768px) {
+  footer .footer-ul-spacing {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    width: 100%;
+  }
+  footer li {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .titles-font {
@@ -584,6 +607,12 @@ footer a {
   box-shadow: 2px 2px 8px 4px #747373;
   background: linear-gradient(to bottom right, rgba(146, 86, 220, 0.8352941176), rgba(255, 121, 217, 0.8078431373));
   transform: scale(1.02);
+}
+@media all and (min-width: 768px) {
+  .discover-banner__button {
+    padding: 35px 30px;
+    font-size: 1.2em;
+  }
 }
 
 .img-background-enchantee {

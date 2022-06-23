@@ -1,3 +1,10 @@
+@mixin bg-img-accueil {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px 20px 0 0;
+}
 @mixin bg-img-menu {
     background-position: center;
     background-size: cover;
@@ -6,3 +13,4 @@
     width: 100vw;
     
 }
+
