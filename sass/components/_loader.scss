@@ -1,12 +1,14 @@
 //   LOADER //
 
 .loader-container {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
+    width: 0;
+    height: 0;
     font-size: 1000%;
     z-index: 3;
     animation: backgroundDisappear 3s 1 linear;
@@ -14,6 +16,7 @@
     i {
         animation: spin 2s 1 linear;
         opacity: 0;
+        color: $primary_color;
     }
 }
 
@@ -23,6 +26,7 @@
     0% {
         transform: rotate(0deg);
         opacity: 1;
+
     }
 
     100% {
@@ -35,11 +39,23 @@
 @keyframes backgroundDisappear {
     0% {
         opacity: 1;
-        background-color: grey;
+        background-color: $secondary_color;
+        width: 100vw;
+        height: 100vh;
+    }
 
+    
+
+    80% {
+        opacity: 0;
+        // background-color: transparent;
+        width: 100%;
+        height: 100%;
     }
 
     100% {
-        opacity: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
     }
 }
