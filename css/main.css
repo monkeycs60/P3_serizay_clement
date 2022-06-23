@@ -550,7 +550,7 @@ footer a {
   text-shadow: 0px 0px 10px grey;
 }
 .discover-banner__button:hover {
-  box-shadow: 2px 2px 8px 4px #d1cfcf;
+  box-shadow: 2px 2px 8px 4px #747373;
   background: linear-gradient(to bottom right, rgba(146, 86, 220, 0.8352941176), rgba(255, 121, 217, 0.8078431373));
   transform: scale(1.02);
 }
