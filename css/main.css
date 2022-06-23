@@ -693,7 +693,7 @@ footer .footer-ul-spacing {
 }
 @media all and (min-width: 768px) {
   .procedure__step {
-    padding: 40px;
+    padding: 25px;
     width: 90%;
   }
 }
@@ -713,7 +713,7 @@ footer .footer-ul-spacing {
 @media all and (min-width: 768px) {
   .procedure__step .procedure__step1__number {
     padding: 6px 12px;
-    transform: translateX(-62px);
+    transform: translateX(-50px);
   }
 }
 .procedure__step i {
