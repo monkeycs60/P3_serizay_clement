@@ -16,7 +16,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
+    @media all and (min-width: 768px) {
+        border-radius: 100px 100px 0px 0px;
+    }
 }
 
 .menu__contenu__title {
@@ -46,14 +48,16 @@ main {
                 height: 100%;
             }
         }
+    }
 
+    @media all and (min-width: 768px) {
+       width: 80%;
+       margin: auto;
     }
 }
 
 .heart-first {
-
     font-size: 1em;
-
 }
 
 .heart-first::after {
@@ -80,7 +84,9 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 3vh;
-    
+    @media all and (min-width: 768px) {
+       gap: 20px;
+    }
 }
 
 @for $i from 1 to 4 {
@@ -118,6 +124,13 @@ main {
         background: $tertiary_color;
 
     }
+    @media all and (min-width: 768px) {
+        font-size: 1.5em;
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+        
+    
 }
 
 
@@ -146,7 +159,14 @@ main {
 
         }
     }
-}
+    @media all and (min-width: 768px) {
+        width: 85%;
+        margin: auto;
+        
+    }
+        
+    }
+
 
 
 

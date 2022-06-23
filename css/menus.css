@@ -665,6 +665,11 @@ main {
   flex-direction: column;
   gap: 15px;
 }
+@media all and (min-width: 768px) {
+  .menu__contenu {
+    border-radius: 100px 100px 0px 0px;
+  }
+}
 
 .menu__contenu__title {
   display: flex;
@@ -687,6 +692,12 @@ main {
 }
 .menu__contenu__title button:hover .heart-first::after {
   height: 100%;
+}
+@media all and (min-width: 768px) {
+  .menu__contenu__title {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .heart-first {
@@ -712,6 +723,11 @@ main {
   flex-direction: column;
   gap: 15px;
   margin-bottom: 3vh;
+}
+@media all and (min-width: 768px) {
+  .menu__contenu__dish {
+    gap: 20px;
+  }
 }
 
 .animation1 {
@@ -763,6 +779,13 @@ main {
   width: 12%;
   background: #99E2D0;
 }
+@media all and (min-width: 768px) {
+  .title-after {
+    font-size: 1.5em;
+    margin: auto;
+    margin-bottom: 3vh;
+  }
+}
 
 .menu__contenu__items {
   height: 100%;
@@ -781,6 +804,12 @@ main {
 .menu__contenu__items:hover .items__checkbox i {
   transform: rotate(720deg);
   margin-left: 0;
+}
+@media all and (min-width: 768px) {
+  .menu__contenu__items {
+    width: 85%;
+    margin: auto;
+  }
 }
 
 .items__titles {
