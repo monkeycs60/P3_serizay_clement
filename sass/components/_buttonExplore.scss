@@ -18,7 +18,11 @@
         transform: scale(1.02);
     }
     @media all and (min-width: 768px) {
-        padding: 35px 30px;
-        font-size: 1.2em;
+        padding: 20px;
+        font-size: 0.9em;
      }
+     @media all and (min-width: 992px) {
+        margin-top: 2vh;
+        width: 50%;
+    }
 }

@@ -439,7 +439,12 @@ body {
     padding-bottom: 25px;
   }
   .logo img {
-    width: 60%;
+    width: 50%;
+  }
+}
+@media all and (min-width: 992px) {
+  .logo img {
+    width: 30%;
   }
 }
 
@@ -456,6 +461,7 @@ footer {
 @media all and (min-width: 768px) {
   footer {
     align-items: center;
+    margin-top: -4.5vh;
   }
 }
 footer h4 {
@@ -606,8 +612,14 @@ footer .footer-ul-spacing {
 }
 @media all and (min-width: 768px) {
   .discover-banner__button {
-    padding: 35px 30px;
-    font-size: 1.2em;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+}
+@media all and (min-width: 992px) {
+  .discover-banner__button {
+    margin-top: 2vh;
+    width: 50%;
   }
 }
 
@@ -627,7 +639,17 @@ footer .footer-ul-spacing {
 }
 @media all and (min-width: 768px) {
   .city-location {
-    font-size: 1.2em;
+    font-size: 0.9em;
+  }
+}
+@media all and (min-width: 992px) {
+  .city-location {
+    font-size: 0.75em;
+    gap: 5vw;
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
   }
 }
 
@@ -652,13 +674,27 @@ footer .footer-ul-spacing {
   .discover-banner {
     gap: 30px;
     padding-bottom: 50px;
+    padding: 30px 10px 40px 10px;
   }
   .discover-banner h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
+  }
+  .discover-banner br {
+    display: none;
   }
   .discover-banner h3 {
     font-size: 1.2em;
+  }
+}
+@media all and (min-width: 992px) {
+  .discover-banner {
+    gap: 0.5vh;
+    padding: 30px 0px 30px 0px;
+    font-size: 0.8em;
+    width: 70%;
+    margin: 3vh auto auto auto;
+    border-radius: 25px;
   }
 }
 
@@ -676,6 +712,22 @@ footer .footer-ul-spacing {
     font-size: 1.3em;
     align-items: center;
     padding-top: 0px;
+  }
+  .procedure h2 {
+    font-size: 1.15em;
+  }
+}
+@media all and (min-width: 992px) {
+  .procedure {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1em;
+    margin-bottom: 2vh;
+  }
+  .procedure h2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -695,6 +747,14 @@ footer .footer-ul-spacing {
   .procedure__step {
     padding: 25px;
     width: 90%;
+    font-size: 0.8em;
+    gap: 10vw;
+  }
+}
+@media all and (min-width: 992px) {
+  .procedure__step {
+    width: 30%;
+    gap: 5%;
   }
 }
 .procedure__step .procedure__step1__text {
@@ -714,6 +774,11 @@ footer .footer-ul-spacing {
   .procedure__step .procedure__step1__number {
     padding: 6px 12px;
     transform: translateX(-50px);
+  }
+}
+@media all and (min-width: 992px) {
+  .procedure__step .procedure__step1__number {
+    transform: translateX(-45px);
   }
 }
 .procedure__step i {
@@ -746,6 +811,16 @@ footer .footer-ul-spacing {
   }
   .restaurants h2 {
     margin: auto;
+    font-size: 1.5em;
+  }
+}
+@media all and (min-width: 1440px) {
+  .restaurants {
+    padding: 15px 40px 80px 40px;
+    gap: 2vh;
+  }
+  .restaurants h2 {
+    font-size: 1.15em;
   }
 }
 
@@ -760,6 +835,14 @@ footer .footer-ul-spacing {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 3vw;
+  }
+}
+@media all and (min-width: 1440px) {
+  .restaurants__container {
+    flex-wrap: nowrap;
+    gap: 2vw;
+    font-size: 0.8em;
   }
 }
 
@@ -772,7 +855,8 @@ footer .footer-ul-spacing {
 }
 @media all and (min-width: 768px) {
   .restaurants__container__restaurant {
-    width: 45%;
+    width: 47%;
+    font-size: 0.85em;
   }
 }
 

@@ -198,6 +198,11 @@ main {
         text-overflow: ellipsis;
         font-size: 110%;
     }
+    @media all and (min-width: 768px) {
+        br {
+            display: none;
+        }
+    }
 }
 
 .items__price {

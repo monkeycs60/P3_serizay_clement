@@ -460,6 +460,7 @@ footer {
 @media all and (min-width: 768px) {
   footer {
     align-items: center;
+    margin-top: -4.5vh;
   }
 }
 footer h4 {
@@ -610,8 +611,14 @@ footer .footer-ul-spacing {
 }
 @media all and (min-width: 768px) {
   .discover-banner__button {
-    padding: 35px 30px;
-    font-size: 1.2em;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+}
+@media all and (min-width: 992px) {
+  .discover-banner__button {
+    margin-top: 2vh;
+    width: 50%;
   }
 }
 
@@ -835,6 +842,11 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 110%;
+}
+@media all and (min-width: 768px) {
+  .items__titles br {
+    display: none;
+  }
 }
 
 .items__price {
