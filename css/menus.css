@@ -463,11 +463,30 @@ footer {
     margin-top: -4.5vh;
   }
 }
+@media all and (min-width: 1440px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 30px 10px 30px 10px;
+  }
+  footer h4 {
+    font-size: 1em;
+    margin: auto;
+    margin-bottom: 0px;
+  }
+  footer li {
+    width: 40%;
+  }
+}
 footer h4 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 1.2em;
   margin-bottom: 3vh;
+  transform: translate(-1vw, 1vh);
 }
 footer a {
   margin-top: 5px;
@@ -479,6 +498,13 @@ footer a {
     justify-content: center;
   }
 }
+@media all and (min-width: 1440px) {
+  footer a {
+    width: 15%;
+    font-size: 0.6em;
+    padding: 15px;
+  }
+}
 footer .footer-flex-li {
   display: flex;
   flex-direction: row;
@@ -488,6 +514,11 @@ footer .container-i {
   width: 5vw;
   overflow: hidden;
 }
+@media all and (min-width: 1440px) {
+  footer .container-i {
+    width: 2vw;
+  }
+}
 footer .footer-ul-spacing {
   display: flex;
   flex-direction: column;
@@ -496,6 +527,14 @@ footer .footer-ul-spacing {
 @media all and (min-width: 768px) {
   footer .footer-ul-spacing {
     gap: 10px;
+  }
+}
+@media all and (min-width: 1440px) {
+  footer .footer-ul-spacing {
+    flex-direction: row;
+    width: 65%;
+    font-size: 0.6em;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {

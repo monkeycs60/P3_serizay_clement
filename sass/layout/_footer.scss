@@ -11,6 +11,27 @@ footer {
     align-items: center;
     margin-top: -4.5vh;
 }
+@media all and (min-width: 1440px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 30px 10px 30px 10px;
+    
+    h4 {
+        font-size: 1em;
+        margin: auto;
+        margin-bottom: 0px;
+    }
+   
+
+    li {
+        width: 40%;
+       
+    }
+
+}
 
     
 
@@ -19,6 +40,7 @@ footer {
     font-weight: 400;
     font-size: 1.2em;
     margin-bottom: 3vh;
+    transform: translate(-1vw, 1vh);
    }
    a {
     margin-top: 5px;
@@ -27,6 +49,11 @@ footer {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    @media all and (min-width: 1440px) {
+        width: 15%;
+        font-size: 0.6em;
+        padding: 15px;
     }
 }
 
@@ -40,6 +67,9 @@ footer {
 .container-i {
     width: 5vw;
     overflow: hidden;
+    @media all and (min-width: 1440px) {
+        width: 2vw;
+    }
 }
 
 .footer-ul-spacing {
@@ -48,6 +78,12 @@ footer {
     gap: 5px;
     @media all and (min-width: 768px) {
         gap: 10px;
+    }
+    @media all and (min-width: 1440px) {
+        flex-direction: row;
+        width: 65%;
+        font-size: 0.6em;
+        align-items: center;
     }
         
     
