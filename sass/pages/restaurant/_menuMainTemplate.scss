@@ -80,9 +80,28 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 3vh;
-
+    
 }
 
+@for $i from 1 to 4 {
+    .animation#{$i} {
+        animation: menuAppearance ($i/2)*1s ease-in-out;
+    }  
+}
+
+
+@keyframes menuAppearance {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
 .title-after {
     font-size: 1.3em;
     color: rgb(71, 71, 71);
@@ -112,20 +131,16 @@ main {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 2px 5px 1px $background_color_dark;
-    animation: menuAppearance 1s ease-in-out;
-    animation-delay: 0.5;
 
     .items__checkbox i {
         margin-left: 5vh;
     }
     &:hover {
         .items__checkbox {
-            // animation: checkSlide 1s ease-in-out 1;
             width: 19%;
         }
 
         .items__checkbox i {
-            // animation: rotateIcon 1s ease-in-out 1;
             transform: rotate(720deg);
             margin-left: 0;
 
@@ -133,32 +148,8 @@ main {
     }
 }
 
-@keyframes menuAppearance {
-    0% {
-        transform: translateY(10px);
-        opacity: 0;
 
-    }
 
-    100% {
-        opacity: 1;
-
-    }
-}
-
-// .delay1 {
-//     animation-delay: 0s;
-// }
-// .delay2 {
-//     animation-delay: 0.5s;
-// }
-// .delay3 {
-//     animation-delay: 1s;
-// }
-//create a for loop for each menu__contenu__items
-//  @for $i from start to end {
-    
-//  }
 
 .items__titles {
     display: flex;
