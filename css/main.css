@@ -541,6 +541,7 @@ footer a {
   color: white;
   background: linear-gradient(to bottom right, #9356DC, #FF79DA);
   border: none;
+  transition: all 0.5s linear;
   cursor: pointer;
 }
 .discover-banner__button span {
@@ -549,8 +550,9 @@ footer a {
   text-shadow: 0px 0px 10px grey;
 }
 .discover-banner__button:hover {
-  box-shadow: 0px 2px 8px 4px #d1cfcf;
-  background: linear-gradient(to bottom right, rgba(146, 86, 220, 0.7450980392), rgba(255, 121, 217, 0.6901960784));
+  box-shadow: 2px 2px 8px 4px #d1cfcf;
+  background: linear-gradient(to bottom right, rgba(146, 86, 220, 0.8352941176), rgba(255, 121, 217, 0.8078431373));
+  transform: scale(1.02);
 }
 
 .city-location {
