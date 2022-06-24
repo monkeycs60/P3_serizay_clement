@@ -488,18 +488,18 @@ footer h4 {
   margin-bottom: 3vh;
   transform: translate(-1vw, 1vh);
 }
-footer a {
+footer .contact {
   margin-top: 5px;
 }
 @media screen and (min-width: 768px) {
-  footer a {
+  footer .contact {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 }
 @media all and (min-width: 1440px) {
-  footer a {
+  footer .contact {
     width: 15%;
     font-size: 0.6em;
     padding: 15px;
