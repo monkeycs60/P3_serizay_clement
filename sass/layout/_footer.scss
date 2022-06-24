@@ -84,9 +84,7 @@ footer {
         width: 65%;
         font-size: 0.6em;
         align-items: center;
-    }
-        
-    
+    }  
 }
 
 
@@ -104,4 +102,9 @@ li {
     justify-content: center;
 }
 }
+}
+
+.anchor-flex {
+    display: flex;
+    gap: 10px;
 }

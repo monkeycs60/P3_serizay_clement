@@ -547,6 +547,11 @@ footer .footer-ul-spacing {
   }
 }
 
+.anchor-flex {
+  display: flex;
+  gap: 10px;
+}
+
 .titles-font {
   font-size: 1.7em;
   font-weight: 900;
