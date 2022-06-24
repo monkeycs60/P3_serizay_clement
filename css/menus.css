@@ -691,7 +691,7 @@ footer .footer-ul-spacing {
   .img-background-enchantee {
     width: 70%;
     margin: auto;
-    border-radius: 14% 86% 17% 83%/76% 53% 47% 24%;
+    border-radius: 73% 37% 75% 51%/83% 47% 74% 50%;
   }
 }
 
@@ -703,6 +703,13 @@ footer .footer-ul-spacing {
   height: 40vh;
   width: 100vw;
 }
+@media all and (min-width: 992px) {
+  .img-background-francaise {
+    width: 70%;
+    margin: auto;
+    border-radius: 73% 37% 75% 51%/83% 47% 74% 50%;
+  }
+}
 
 .img-background-palette {
   background-image: url("../../../images/restaurants/palette-gout.jpg");
@@ -712,6 +719,13 @@ footer .footer-ul-spacing {
   height: 40vh;
   width: 100vw;
 }
+@media all and (min-width: 992px) {
+  .img-background-palette {
+    width: 70%;
+    margin: auto;
+    border-radius: 73% 37% 75% 51%/83% 47% 74% 50%;
+  }
+}
 
 .img-background-delice {
   background-image: url("../../../images/restaurants/delice-sens.jpg");
@@ -720,6 +734,13 @@ footer .footer-ul-spacing {
   background-repeat: no-repeat;
   height: 40vh;
   width: 100vw;
+}
+@media all and (min-width: 992px) {
+  .img-background-delice {
+    width: 70%;
+    margin: auto;
+    border-radius: 73% 37% 75% 51%/83% 47% 74% 50%;
+  }
 }
 
 main {

@@ -858,6 +858,11 @@ footer .footer-ul-spacing {
     font-size: 1.5em;
   }
 }
+@media all and (min-width: 992px) {
+  .restaurants h2 {
+    font-size: 1.15em;
+  }
+}
 @media all and (min-width: 1440px) {
   .restaurants {
     padding: 15px 40px 8vh 40px;
