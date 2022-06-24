@@ -474,6 +474,7 @@ footer {
   footer {
     align-items: center;
     margin-top: -7vh;
+    font-size: 1.1em;
   }
 }
 @media all and (min-width: 1440px) {
