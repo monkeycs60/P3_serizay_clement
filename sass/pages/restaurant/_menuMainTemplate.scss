@@ -4,8 +4,9 @@
 
 main {
     background: #f5f1f1; 
+    @media all and (min-width: 1440px) {
+    }
 }
-
 
 .menu__contenu {
     width: 100%;
@@ -23,6 +24,8 @@ main {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: flex-start;
+        border-radius: 35px;
     }
 }
 
@@ -101,6 +104,7 @@ main {
     @media all and (min-width: 1440px) {
        font-size: 0.8em;
        margin-top: 0px;
+       width: 32%;
     }
 }
 
@@ -275,7 +279,3 @@ footer {
 
 
 
-// Align ENTREES - PLATS - DESSERTS dans la note enchantée où il y a 4 items entrées
-.enchantee-top {
-    transform: translateY(-22%);
-}
