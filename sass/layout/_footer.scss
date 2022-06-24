@@ -7,40 +7,13 @@ footer {
     background: rgb(70, 69, 69);
     color: white;
     font-weight: 100;
-@media all and (min-width: 768px) {
-    align-items: center;
-    margin-top: -7vh;
-    font-size: 1.1em;
-}
-@media all and (min-width: 1440px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    padding: 30px 10px 30px 10px;
-    
-    h4 {
-        font-size: 1em;
-        margin: auto;
-        margin-bottom: 0px;
-    }
-   
-
-    li {
-        width: 40%;
-    }
-
-}
-
-    
 
    h4 {
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
     font-size: 1.2em;
     margin-bottom: 3vh;
-    transform: translate(-1vw, 1vh);
+   
    }
    .contact {
     margin-top: 5px;
@@ -89,19 +62,42 @@ footer {
 
 
 @media screen and (min-width: 768px) {
+    align-items: center;
+    margin-top: -7vh;
+    font-size: 1.1em;
 ul {
-
-    width: 100%;
-   
-    
+    width: 100%;  
 }
 li {
     display: flex;
     justify-content: center;
 }
 }
+@media all and (min-width: 1440px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 30px 10px 30px 10px;
+    
+    h4 {
+        font-size: 1em;
+        margin: auto;
+    }
+   
+
+    li {
+        width: 40%;
+    }
+
 }
 
+}
+
+
+
+//designed for desktop responsive - aligns p and icons in the row of the footer
 .anchor-flex {
     display: flex;
     gap: 10px;
