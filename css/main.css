@@ -461,7 +461,7 @@ footer {
 @media all and (min-width: 768px) {
   footer {
     align-items: center;
-    margin-top: -4.5vh;
+    margin-top: -7vh;
   }
 }
 @media all and (min-width: 1440px) {
@@ -860,8 +860,8 @@ footer .footer-ul-spacing {
 }
 @media all and (min-width: 1440px) {
   .restaurants {
-    padding: 15px 40px 80px 40px;
-    gap: 2vh;
+    padding: 15px 40px 8vh 40px;
+    gap: 3vh;
   }
   .restaurants h2 {
     font-size: 1.15em;

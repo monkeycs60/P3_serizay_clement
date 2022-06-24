@@ -3,7 +3,9 @@
 
     background-image: url("../../../images/restaurants/note-enchantee.jpg");
     @include bg-img-menu;
- 
+ @media all and (min-width: 992px) {
+    height: 40vh;
+ }
 }
 
 .img-background-francaise {

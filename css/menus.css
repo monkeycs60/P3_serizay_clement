@@ -460,7 +460,7 @@ footer {
 @media all and (min-width: 768px) {
   footer {
     align-items: center;
-    margin-top: -4.5vh;
+    margin-top: -7vh;
   }
 }
 @media all and (min-width: 1440px) {
@@ -674,6 +674,11 @@ footer .footer-ul-spacing {
   height: 40vh;
   width: 100vw;
 }
+@media all and (min-width: 992px) {
+  .img-background-enchantee {
+    height: 40vh;
+  }
+}
 
 .img-background-francaise {
   background-image: url("../../../images/restaurants/la-francaise.jpg");
@@ -721,6 +726,13 @@ main {
     border-radius: 100px 100px 0px 0px;
   }
 }
+@media all and (min-width: 1440px) {
+  .menu__contenu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .menu__contenu__title {
   display: flex;
@@ -748,6 +760,12 @@ main {
   .menu__contenu__title {
     width: 80%;
     margin: auto;
+  }
+}
+@media all and (min-width: 1440px) {
+  .menu__contenu__title {
+    justify-content: center;
+    gap: 5vw;
   }
 }
 
@@ -778,6 +796,12 @@ main {
 @media all and (min-width: 768px) {
   .menu__contenu__dish {
     gap: 20px;
+  }
+}
+@media all and (min-width: 1440px) {
+  .menu__contenu__dish {
+    font-size: 0.8em;
+    margin-top: 0px;
   }
 }
 
@@ -927,4 +951,8 @@ main {
 
 footer {
   margin-top: -5vh;
+}
+
+.enchantee-top {
+  transform: translateY(-22%);
 }/*# sourceMappingURL=menus.css.map */
