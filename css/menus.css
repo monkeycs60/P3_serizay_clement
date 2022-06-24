@@ -413,7 +413,7 @@ body {
   }
   100% {
     transform: rotate(360deg);
-    margin-left: none;
+    margin-left: 0;
   }
 }
 @keyframes rotateIcon {
@@ -422,7 +422,7 @@ body {
   }
   100% {
     transform: rotate(360deg);
-    margin-left: none;
+    margin-left: 0;
   }
 }
 .logo {

@@ -24,9 +24,6 @@
      @media all and (min-width: 1440px) {
         padding:  15px 40px 8vh 40px;
         gap: 3vh;
-        h2 {
-            font-size: 1.15em;
-        }
      }
 }
 
@@ -59,11 +56,8 @@
     @media all and (min-width: 768px) {
       width: 47%;
       font-size: 0.85em;
-     }
-    
+     } 
 }
-
-
 
 .nouveau-card {
     position: absolute;
@@ -76,17 +70,13 @@
     @media all and (min-width: 768px) {
         left: 65%;
     }
-        
     }
-
 
 .restaurants__container__restaurant__description {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px 10px 10px;
     font-size: 1.1em;
-    
-
 }
 
 .restaurants__container__restaurant__description__text {
@@ -107,15 +97,12 @@
     overflow: visible;
     background: none;
     
-
-
     i {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
 
 &:hover {
     .heart-first::after {
@@ -148,31 +135,3 @@
 }
 
 
-
-
-//restaurant background images
-
-.restaurant__bg--palette {
-    background: url("../../../images/restaurants/palette-gout.jpg");
-    background-position: top 90% left 50%;
-    @include bg-img-accueil;
-
-}
-
-.restaurant__bg--enchantee {
-    background: url("../../../images/restaurants/note-enchantee.jpg");
-    background-position: top 60% left 50%;
-    @include bg-img-accueil;
-}
-
-.restaurant__bg--francaise {
-    background: url("../../../images/restaurants/la-francaise.jpg");
-    background-position: top 100% left 50%;
-   @include bg-img-accueil;
-}
-
-.restaurant__bg--delice {
-    background: url("../../../images/restaurants/delice-sens.jpg");
-    background-position: top 100% left 50%;
-    @include bg-img-accueil;
-}
