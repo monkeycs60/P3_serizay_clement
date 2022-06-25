@@ -967,6 +967,12 @@ footer .footer-ul-spacing {
     left: 65%;
   }
 }
+@media all and (min-width: 1440px) {
+  .nouveau-card {
+    left: 70%;
+    padding: 12px;
+  }
+}
 
 .restaurants__container__restaurant__description {
   display: flex;
