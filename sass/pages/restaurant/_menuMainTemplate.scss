@@ -147,8 +147,16 @@ main {
         font-size: 1.5em;
         margin: auto;
         margin-bottom: 3vh;
+        &::after {
+            width: 10vw;
+        }
     }
+    @media all and (min-width: 1440px) {
         
+        &::after {
+            width: 4vw;
+        }
+    }  
     
 }
 
