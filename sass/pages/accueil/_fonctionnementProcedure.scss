@@ -26,7 +26,10 @@
             justify-content: center;
         }
      }
-
+     @media all and (min-width: 1440px) {
+        padding-bottom: 0px;
+        }
+    
 }
 
 .procedure__step {
@@ -53,6 +56,11 @@
         width: 30%;
         gap: 5%;
      }
+
+@media all and (min-width: 1440px) {
+    transform: translateY(-20%);
+    }
+
 
 
     .procedure__step1__text {

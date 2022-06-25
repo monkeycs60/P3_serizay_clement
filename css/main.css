@@ -771,6 +771,11 @@ footer .footer-ul-spacing {
     justify-content: center;
   }
 }
+@media all and (min-width: 1440px) {
+  .procedure {
+    padding-bottom: 0px;
+  }
+}
 
 .procedure__step {
   display: flex;
@@ -796,6 +801,11 @@ footer .footer-ul-spacing {
   .procedure__step {
     width: 30%;
     gap: 5%;
+  }
+}
+@media all and (min-width: 1440px) {
+  .procedure__step {
+    transform: translateY(-20%);
   }
 }
 .procedure__step .procedure__step1__text {
