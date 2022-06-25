@@ -1,38 +1,25 @@
 //Keyframes animation
 
 
-@keyframes fillHeart {
-    0% {
-        height: 0;
-    }
 
+// the different parts of the menu appear with a fade animation and a slight translate from the bottom
+@keyframes menuAppearance {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+        
+    }
+    
     100% {
-        height: 100%;
+        opacity: 1;
+        
     }
 }
 
 
-@keyframes checkSlide {
-    0% {
-        width: 0;
-
-    }
-
-    100% {
-        width: 19%;
-
-    }
-}
-
-@keyframes rotateIcon {
-    0% {
-        margin-left: 5vh;
-
-    }
-
-
-    100% {
-        transform: rotate(360deg);
-        margin-left: 0;
-    }
+//FOR LOOP : for each part of the menu (entrees, plats, dessert), apply the same animation BUT with an increased duration (Entrées first, desserts last) 
+@for $i from 1 to 4 {
+    .animation#{$i} {
+        animation: menuAppearance ($i/2)*1s ease-in-out;
+    }  
 }

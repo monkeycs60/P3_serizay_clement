@@ -1,3 +1,6 @@
+//Restaurant pannel
+
+//global container
 .restaurants {
     display: flex;
     flex-direction: column;
@@ -16,6 +19,8 @@
             font-size: 1.5em;
         }
      }
+
+     //responsive for restaurant pannel
      @media all and (min-width: 992px) {
     h2 {
         font-size: 1.15em;
@@ -27,11 +32,14 @@
      }
 }
 
+//the whole section MINUS the h2 title "Restaurants"
 .restaurants__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3.5vh;
+
+    //responsive for the whole class
     @media all and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -43,10 +51,10 @@
         gap: 2vw;
         font-size: 0.8em;
     
-     }
-     
+     }  
 }
 
+//each restaurant card
 .restaurants__container__restaurant {
     background: white;
     border-radius: 20px;
@@ -59,6 +67,8 @@
      } 
 }
 
+
+//the green "nouveau" badge
 .nouveau-card {
     position: absolute;
     top: 10%;
@@ -76,6 +86,7 @@
     }
     }
 
+    //bottom left part of the card (text)
 .restaurants__container__restaurant__description {
     display: flex;
     justify-content: space-between;
@@ -83,12 +94,15 @@
     font-size: 1.1em;
 }
 
+//child of previous, contains the text
 .restaurants__container__restaurant__description__text {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
+
+//the heart button on the bottom right of the card
 .restaurants__container__restaurant button {
     position: absolute;
     top: 80%;
@@ -101,6 +115,7 @@
     overflow: visible;
     background: none;
     
+    //the heart icon position
     i {
         position: absolute;
         top: 50%;
@@ -108,15 +123,17 @@
         transform: translate(-50%, -50%);
     }
 
+    //animation on heart
 &:hover {
     .heart-first::after {
-        // animation: fillHeart 1s linear 1;
         height: 100%;
     }
 }
 
 }
 
+
+//Coeurs superposés
 .heart-first {
     display: inline-block;
     position: relative;

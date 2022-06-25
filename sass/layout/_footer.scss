@@ -1,3 +1,5 @@
+//Footer page - same for all html
+
 footer {
     font-size: 1.3em;
     display: flex;
@@ -8,90 +10,106 @@ footer {
     color: white;
     font-weight: 100;
 
-   h4 {
-    font-family: 'Shrikhand', cursive;
-    font-weight: 400;
-    font-size: 1.2em;
-    margin-bottom: 3vh;
-   
-   }
-   .contact {
-    margin-top: 5px;
-    @media screen and (min-width: 768px) {
-       
-        width: 100%;
+    h4 {
+        font-family: 'Shrikhand', cursive;
+        font-weight: 400;
+        font-size: 1.2em;
+        margin-bottom: 3vh;
+
+    }
+
+    //the last item, contact, is not part of the UL because it is anchor link a
+    .contact {
+        margin-top: 5px;
+
+        //responsive for this class
+        @media screen and (min-width: 768px) {
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media all and (min-width: 1440px) {
+            width: 15%;
+            font-size: 0.6em;
+            padding: 15px;
+        }
+    }
+
+
+    .footer-flex-li {
         display: flex;
-        justify-content: center;
-    }
-    @media all and (min-width: 1440px) {
-        width: 15%;
-        font-size: 0.6em;
-        padding: 15px;
-    }
-}
-
-
-.footer-flex-li {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.container-i {
-    width: 5vw;
-    overflow: hidden;
-    @media all and (min-width: 1440px) {
-        width: 2vw;
-    }
-}
-
-.footer-ul-spacing {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    @media all and (min-width: 768px) {
+        flex-direction: row;
         gap: 10px;
     }
+
+
+    //container of fork and shakehand icons
+    .container-i {
+        width: 5vw;
+        overflow: hidden;
+
+        @media all and (min-width: 1440px) {
+            width: 2vw;
+        }
+    }
+
+    .footer-ul-spacing {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        //responsive for this class
+        @media all and (min-width: 768px) {
+            gap: 10px;
+        }
+
+        @media all and (min-width: 1440px) {
+            flex-direction: row;
+            width: 65%;
+            font-size: 0.6em;
+            align-items: center;
+        }
+    }
+
+    
+
+    //responsive for the whole footer
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        margin-top: -7vh;
+        font-size: 1.1em;
+
+        ul {
+            width: 100%;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     @media all and (min-width: 1440px) {
         flex-direction: row;
-        width: 65%;
-        font-size: 0.6em;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
-    }  
-}
+        height: auto;
+        padding: 30px 10px 30px 10px;
+
+        h4 {
+            font-size: 1em;
+            margin: auto;
+        }
 
 
-@media screen and (min-width: 768px) {
-    align-items: center;
-    margin-top: -7vh;
-    font-size: 1.1em;
-ul {
-    width: 100%;  
-}
-li {
-    display: flex;
-    justify-content: center;
-}
-}
-@media all and (min-width: 1440px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    padding: 30px 10px 30px 10px;
-    
-    h4 {
-        font-size: 1em;
-        margin: auto;
+        li {
+            width: 40%;
+        }
+
     }
-   
-
-    li {
-        width: 40%;
-    }
-
-}
 
 }
 
@@ -101,4 +119,7 @@ li {
 .anchor-flex {
     display: flex;
     gap: 10px;
+    @media all and (min-width: 1440px) {
+        gap: 0px;
+}
 }

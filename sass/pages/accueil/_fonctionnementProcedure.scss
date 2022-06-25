@@ -1,4 +1,6 @@
 // FONCTIONNEMENT PANNEL
+
+//the main container for this section
 .procedure {
     display: flex;
     flex-direction: column;
@@ -7,31 +9,37 @@
     gap: 4vh;
     margin-top: 2vh;
     margin-bottom: 4vh;
+
+    //responsive for this class
     @media all and (min-width: 768px) {
         font-size: 1.3em;
         align-items: center;
         padding-top: 0px;
+
         h2 {
             font-size: 1.15em;
         }
-     }
-     @media all and (min-width: 992px) {
+    }
+
+    @media all and (min-width: 992px) {
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 1em;
         margin-bottom: 2vh;
+
         h2 {
             width: 90%;
             display: flex;
             justify-content: center;
         }
-     }
-     @media all and (min-width: 1440px) {
+    }
+
+    @media all and (min-width: 1440px) {
         padding-bottom: 0px;
-        }
-    
+    }
 }
 
+//container for the 3 buttons
 .procedure__step {
     display: flex;
     flex-direction: row;
@@ -45,56 +53,64 @@
     box-shadow: 0px 2px 5px 1px $background_color_dark;
 
 
-
+    //responsive for the whole class
     @media all and (min-width: 768px) {
         padding: 25px;
         width: 90%;
         font-size: 0.8em;
         gap: 10vw;
-     }
-@media all and (min-width: 992px) {
-        width: 30%;
-        gap: 5%;
-     }
-
-@media all and (min-width: 1440px) {
-    transform: translateY(-20%);
     }
 
+    @media all and (min-width: 992px) {
+        width: 30%;
+        gap: 5%;
+    }
 
+    @media all and (min-width: 1440px) {
+        transform: translateY(-20%);
+        gap: 10%;
+    }
 
+//the n° of the step
+    .procedure__step1__number {
+        transform: translateX(calc(-75% + 5px));
+        border: 1px solid $primary_color;
+        border-radius: 100%;
+        padding: 3px 6px;
+        background: $primary_color;
+        color: white;
+        font-size: 1em;
+    
+    
+        //responsive for this class - center the button on the left border of the button
+        @media all and (min-width: 768px) {
+            padding: 6px 12px;
+            transform: translateX(-45px);
+        }
+    }
+    
+    //the fontawesome icon for the step
+    i {
+        color: $font_color_dark_grey;
+        transform: translateX(-40%);
+    }
+
+//the text inside each button
     .procedure__step1__text {
         font-size: 1.1em;
         font-weight: 800;
     }
 
-    .procedure__step1__number {
-      transform: translateX(calc(-75% + 5px));
-      border: 1px solid $primary_color;
-      border-radius: 100%;
-      padding: 3px 6px;
-      background: $primary_color;
-      color: white;
-      font-size: 1em;
-      @media all and (min-width: 768px) {
-        padding: 6px 12px;
-        transform: translateX(-50px);
-     }
-     @media all and (min-width: 992px) {
-        transform: translateX(-45px)
-     }
 
-    }
-    i {
-        color: $font_color_dark_grey;
-        transform: translateX(-40%);
-    }
 }
 
+
+//hover animation for the buttons
 .procedure__step:hover {
-    
+
     background: #9256dc27;
     box-shadow: 0px 2px 8px 4px $background_color_dark;
+
     i {
         color: $primary_color;
     }

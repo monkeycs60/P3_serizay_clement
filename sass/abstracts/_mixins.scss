@@ -1,3 +1,4 @@
+//for the landing page images
 @mixin bg-img-accueil {
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,6 +7,8 @@
     border-radius: 20px 20px 0 0;
 }
 
+
+//for the menu page images
 @mixin bg-img-menu {
     background-position: center;
     background-size: cover;
