@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&family=Shrikhand&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -495,7 +495,7 @@ footer {
   gap: 0px;
   background: rgb(70, 69, 69);
   color: white;
-  font-weight: 100;
+  font-weight: 400;
 }
 footer h4 {
   font-family: "Shrikhand", cursive;
@@ -660,9 +660,9 @@ footer .contact {
   align-items: center;
   gap: 11vw;
   font-size: 1em;
-  font-weight: 400;
 }
 .city-location h3 {
+  font-weight: 600;
   transform: translateX(-25%);
 }
 @media all and (min-width: 768px) {
@@ -818,7 +818,7 @@ footer .contact {
 .procedure__step .procedure__step1__text {
   font-size: 1.1em;
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .procedure__step:hover {
@@ -968,6 +968,9 @@ footer .contact {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px 10px 10px;
+  font-size: 1.1em;
+}
+.restaurants__container__restaurant__description p {
   font-size: 1.1em;
 }
 
