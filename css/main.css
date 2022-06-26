@@ -662,7 +662,7 @@ footer .contact {
   font-size: 1em;
 }
 .city-location h3 {
-  font-weight: 600;
+  font-weight: 500;
   transform: translateX(-25%);
 }
 @media all and (min-width: 768px) {
@@ -818,7 +818,7 @@ footer .contact {
 .procedure__step .procedure__step1__text {
   font-size: 1.1em;
   font-family: Roboto;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .procedure__step:hover {
