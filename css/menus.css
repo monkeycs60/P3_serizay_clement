@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shrikhand&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -764,6 +765,9 @@ main {
 .menu__contenu__title h1 {
   font-family: "Shrikhand", cursive;
   font-size: 1.7em;
+}
+.menu__contenu__title .menu__contenu__dish__items__description__sub {
+  font-size: 1.5em;
 }
 .menu__contenu__title button {
   position: relative;

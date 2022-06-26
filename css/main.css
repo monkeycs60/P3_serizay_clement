@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shrikhand&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -659,7 +660,7 @@ footer .contact {
   align-items: center;
   gap: 11vw;
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 400;
 }
 .city-location h3 {
   transform: translateX(-25%);
@@ -816,7 +817,8 @@ footer .contact {
 }
 .procedure__step .procedure__step1__text {
   font-size: 1.1em;
-  font-weight: 800;
+  font-family: Roboto;
+  font-weight: 500;
 }
 
 .procedure__step:hover {
