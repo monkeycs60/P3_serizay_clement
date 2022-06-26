@@ -1,5 +1,6 @@
 //import fonts from Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 
 
 //import Base  Reset & Normalize & Body
@@ -26,10 +27,10 @@
 
 
 //import accueil scss for all sections
-@import "pages/accueil/topDiscover";
-@import "pages/accueil/fonctionnementProcedure";
-@import "pages/accueil/restaurantsBackgrounds";
-@import "pages/accueil/restaurantsList";
+@import "pages/accueil/1topDiscover";
+@import "pages/accueil/2fonctionnementProcedure";
+@import "pages/accueil/3restaurantsBackgrounds";
+@import "pages/accueil/4restaurantsList";
 
 
 
