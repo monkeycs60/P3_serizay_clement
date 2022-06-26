@@ -113,6 +113,7 @@ main {
        font-size: 0.8em;
        margin-top: 0px;
        width: 32%;
+      
     }
 }
 
@@ -188,12 +189,8 @@ main {
     @media all and (min-width: 768px) {
         width: 85%;
         margin: auto;
-        
+    }    
     }
-        
-    }
-
-
 
 
 //left part of the card, only the two texts
@@ -238,6 +235,9 @@ main {
             font-weight: lighter;
         }
     }
+    @media all and (min-width: 1440px) {
+        padding: 20px;
+    }
 }
 
 //price of the dish
@@ -247,6 +247,9 @@ main {
     align-items: flex-end;
     font-weight: 800;
     padding: 15px 20px;
+    @media all and (min-width: 1440px) {
+        padding: 20px;
+    }
 }
 
 //the checkbox div that is hidden originally (width to 0%)
@@ -263,12 +266,12 @@ main {
     z-index: 1;
     padding: 0;
     font-size: 130%;
+    
 
     i {
         font-size: 1.5em;
         color: white;
         transition: all 1s ease-in-out;
-        // transform: rotate(120deg);
     }
 }
 

@@ -14,7 +14,8 @@
         margin: auto;
         gap: 6vh;
         margin-bottom: 50px;
-        color: green;
+        padding-bottom: 8vh;
+        
         h2 {
             margin: auto;
             font-size: 1.5em;
@@ -33,12 +34,19 @@
      }
 }
 
+//main title of the section
+.restaurants-title {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
 //the whole section MINUS the h2 title "Restaurants"
 .restaurants__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3.5vh;
+
 
     //responsive for the whole class
     @media all and (min-width: 768px) {
