@@ -11,10 +11,11 @@
     height: 0;
     font-size: 1000%;
     z-index: 3;
+    // transition: all 0.5s ease-in-out;
     animation: backgroundDisappear 3s 1 linear;
 
     i {
-        animation: spin 2s 1 linear;
+        animation: spin 1.6s 1 linear;
         opacity: 0;
         color: $primary_color;
     }

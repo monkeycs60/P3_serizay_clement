@@ -404,6 +404,7 @@ body {
   }
   80% {
     opacity: 0;
+    background-color: transparent;
     width: 100%;
     height: 100%;
   }
@@ -422,6 +423,7 @@ body {
   }
   80% {
     opacity: 0;
+    background-color: transparent;
     width: 100%;
     height: 100%;
   }
@@ -624,8 +626,8 @@ footer .contact {
           animation: backgroundDisappear 3s 1 linear;
 }
 .loader-container i {
-  -webkit-animation: spin 2s 1 linear;
-          animation: spin 2s 1 linear;
+  -webkit-animation: spin 1.6s 1 linear;
+          animation: spin 1.6s 1 linear;
   opacity: 0;
   color: #9356DC;
 }
