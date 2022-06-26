@@ -1,11 +1,14 @@
 // CITY LOCATION ------ Paris, Belleville
 .city-location {
-    background: $background_color_city;
-    color: rgb(71, 71, 71);
+    
+    background: rgb(230, 230, 230);
     padding: 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    // border-top: 3px solid rgb(184, 184, 184); 
+    //box shadow top
+    box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.2); 
     gap: 11vw;
     font-size: 1em;
     h3 {

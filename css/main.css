@@ -652,12 +652,12 @@ footer .contact {
 }
 
 .city-location {
-  background: #e0dfdf;
-  color: rgb(71, 71, 71);
+  background: rgb(230, 230, 230);
   padding: 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.2);
   gap: 11vw;
   font-size: 1em;
 }
@@ -682,7 +682,7 @@ footer .contact {
 }
 
 .discover-banner {
-  background: #f5f1f1;
+  background: rgb(244, 244, 244);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -774,6 +774,7 @@ footer .contact {
   border-radius: 20px;
   border: none;
   font-size: 1.1em;
+  background: rgb(244, 244, 244);
   box-shadow: 0px 2px 5px 1px #d1cfcf;
 }
 @media all and (min-width: 768px) {
@@ -875,7 +876,7 @@ footer .contact {
   justify-content: center;
   gap: 3vh;
   padding: 40px 25px 50px 25px;
-  background-color: #f5f1f1;
+  background-color: rgb(244, 244, 244);
 }
 @media all and (min-width: 768px) {
   .restaurants {
