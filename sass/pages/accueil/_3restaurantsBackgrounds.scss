@@ -1,26 +1,25 @@
 //restaurant background images
 
 .restaurant__bg--palette {
-    background: url("../../../images/restaurants/palette-gout.jpg");
+    background: url("../images/restaurants/palette-gout.jpg");
     background-position: top 90% left 50%;
     @include bg-img-accueil;
-
 }
 
 .restaurant__bg--enchantee {
-    background: url("../../../images/restaurants/note-enchantee.jpg");
+    background: url("../images/restaurants/note-enchantee.jpg");
     background-position: top 60% left 50%;
     @include bg-img-accueil;
 }
 
 .restaurant__bg--francaise {
-    background: url("../../../images/restaurants/la-francaise.jpg");
+    background: url("../images/restaurants/la-francaise.jpg");
     background-position: top 100% left 50%;
    @include bg-img-accueil;
 }
 
 .restaurant__bg--delice {
-    background: url("../../../images/restaurants/delice-sens.jpg");
+    background: url("../images/restaurants/delice-sens.jpg");
     background-position: top 100% left 50%;
     @include bg-img-accueil;
 }
