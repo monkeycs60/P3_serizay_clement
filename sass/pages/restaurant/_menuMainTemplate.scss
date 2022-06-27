@@ -3,9 +3,9 @@
 
 //the container (minus HEADER & FOOTER)
 main {
-    background: #f5f1f1; 
-    @media all and (min-width: 1440px) {
-    }
+    background: #f5f1f1;
+
+    @media all and (min-width: 1440px) {}
 }
 
 //everything under the menu photo
@@ -23,6 +23,7 @@ main {
     @media all and (min-width: 768px) {
         border-radius: 100px 100px 0px 0px;
     }
+
     @media all and (min-width: 1440px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -37,8 +38,10 @@ main {
 .menu__contenu__title {
     display: flex;
     justify-content: space-between;
+    padding-left: 10px;
     align-items: center;
     font-size: 1.2em;
+
 
     h1 {
         font-family: 'Shrikhand', cursive;
@@ -55,14 +58,17 @@ main {
         cursor: pointer;
         font-size: 1.5em;
         border: none;
-        overflow: visible;
+        overflow: hidden;
         background: none;
-        transform: translateX(-25%);
-        
-//animation filling the heart
+        transform: translateX(-25%) translateY(7%);
+
+        //animation filling the heart
         &:hover {
             .heart-first::after {
                 height: 100%;
+                transform: none;
+                left: 0;
+                top: 0;
             }
         }
     }
@@ -70,34 +76,54 @@ main {
 
     // responsive for this class
     @media all and (min-width: 768px) {
-       width: 80%;
-       margin: auto;
+        width: 80%;
+        margin: auto;
     }
+
     @media all and (min-width: 1440px) {
         justify-content: center;
         gap: 5vw;
-        
-        
+
+
     }
 }
 
 //coeurs superposés
 .heart-first {
     font-size: 1em;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
 }
 
 .heart-first::after {
     font-family: FontAwesome;
     content: "\f004";
     position: absolute;
-    left: 30%;
+
     height: 0%;
+    top: -0.3vh;
+    transform-origin: 10px bottom;
+    transform: scale(0);
     overflow: hidden;
+    height: fit-content;
     background: -webkit-linear-gradient($primary_color, $secondary_color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: all 2s ease-in-out;
+
+    
+    @media all and (min-width: 768px) {
+        left: 1.1vw;
+        top: -0.5vh;
+    }
+    @media all and (min-width: 1440px) {
+        left: 0.7vw;
+        top: -0.5vh;
+    }
+
+
 }
 
 
@@ -110,14 +136,16 @@ main {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 3vh;
+
     @media all and (min-width: 768px) {
-       gap: 20px;
+        gap: 20px;
     }
+
     @media all and (min-width: 1440px) {
-       font-size: 0.8em;
-       margin-top: 0px;
-       width: 32%;
-      
+        font-size: 0.8em;
+        margin-top: 0px;
+        width: 32%;
+
     }
 }
 
@@ -146,17 +174,19 @@ main {
         font-size: 1.5em;
         margin: auto;
         margin-bottom: 3vh;
+
         &::after {
             width: 10vw;
         }
     }
+
     @media all and (min-width: 1440px) {
-        
+
         &::after {
             width: 4vw;
         }
-    }  
-    
+    }
+
 }
 
 
@@ -175,6 +205,7 @@ main {
     }
 
     &:hover {
+
         //gives the checkbox a width (original width is 0%, see bellow), so that it appears on the screen
         .items__checkbox {
             width: 19%;
@@ -193,8 +224,8 @@ main {
     @media all and (min-width: 768px) {
         width: 85%;
         margin: auto;
-    }    
     }
+}
 
 
 //left part of the card, only the two texts
@@ -208,7 +239,7 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 15px 10px;
-   
+
     //the title of the dish
     h3 {
         font-size: 140%;
@@ -225,20 +256,23 @@ main {
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 110%;
-        
+
     }
 
     //responsive for this class
     @media all and (min-width: 768px) {
+
         //only for "délice des sens", it does not break the line for tablet and desktop resolution // "de Provence"
         br {
             display: none;
         }
+
         p {
             font-size: 100%;
             font-weight: lighter;
         }
     }
+
     @media all and (min-width: 1440px) {
         padding: 20px;
     }
@@ -251,6 +285,7 @@ main {
     align-items: flex-end;
     font-weight: 800;
     padding: 15px 20px;
+
     @media all and (min-width: 1440px) {
         padding: 20px;
     }
@@ -270,7 +305,7 @@ main {
     z-index: 1;
     padding: 0;
     font-size: 130%;
-    
+
 
     i {
         font-size: 1.5em;
@@ -299,8 +334,5 @@ main {
 
 footer {
     margin-top: -5vh;
-    
+
 }
-
-
-
