@@ -819,7 +819,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transition: all 2s ease-in-out;
+  transition: all 1.4s ease-in-out;
 }
 @media all and (min-width: 768px) {
   .heart-first::after {
